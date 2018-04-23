@@ -691,6 +691,11 @@ a:hover .hex_footer {
     padding: 20px 0px;
     width: 100%;
     margin-top: 100px;
+    /*position: absolute;*/
+    /*left: 0;*/
+    /*bottom: 0;*/
+    /*width: 100%;*/
+    /*height: 80px;*/
 }
 
 .templatemo_footer .hex_footer {

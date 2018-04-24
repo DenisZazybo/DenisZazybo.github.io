@@ -55,7 +55,7 @@ jQuery(document).ready(function($){
 		$(".main_menu a.templatemo_page3, .responsive_menu a.templatemo_page3").removeClass('active');
 		$(".main_menu a.templatemo_home, .responsive_menu a.templatemo_home").removeClass('active');
 		
-		loadScript();
+		//loadScript();
 		return false;
 	});
 
@@ -91,19 +91,11 @@ jQuery(document).ready(function($){
 
 });
 
-
-function loadScript() {
-  var script = document.createElement('script');
-  script.type = 'text/javascript';
-  script.src = 'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&' +
-      'callback=initialize';
-  document.body.appendChild(script);
-}
-
-function initialize() {
-    var mapOptions = {
-      zoom: 12,
-      center: new google.maps.LatLng(40.7823234,-73.9654161)
-    };
-    var map = new google.maps.Map(document.getElementById('templatemo_map'),  mapOptions);
-}
+//
+// function initialize() {
+//     var mapOptions = {
+//       zoom: 12,
+//       center: new google.maps.LatLng(55.776952,37.389405)
+//     };
+//     var map = new google.maps.Map(document.getElementById('templatemo_map'),  mapOptions);
+// }

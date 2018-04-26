@@ -71,13 +71,14 @@
                 plugin.lightbox.fadeIn('fast').append('<span class="lightbox-loading"></span>');
 
                 var img = $('<img src="' + $(plugin.current).attr('href') + '" draggable="false">');
-              //  $(".title-slider p", plugin.lightbox).remove();
-               // var pTitle = $(plugin.current).attr('data-title');
-               // console.log('<img src="' + $(plugin.current).attr('href') + '" draggable="false">');
+                $(".title-slider p", plugin.lightbox).remove();
+                var pTitle = $(plugin.current).attr('data-title');
+               // console.log($(plugin.current).attr('data-title'));
                 $(img).load(function () {
                     $('.lightbox-loading').remove();
                     plugin.lightbox.append(img);
                     plugin.image = $("img", plugin.lightbox).hide();
+                    $(".title-slider", plugin.lightbox).append('<p>'+pTitle+'</p>');
                     plugin.resizeImage();
                     plugin.setCaption();
                 });

@@ -12,13 +12,20 @@ html, body {
     margin: 0px;
     color: #e7e7e7;
     background: #393e42;
-    font-size: 12px;
+    font-size: 16px;
 }
 
 .blue {
     color: #0CF;
 }
+.block_center{
+    left:50%;
+    margin-left:-25%;
+}
 
+.mb25{
+    margin-bottom: 25px;
+}
 .green {
     color: #0F0;
 }
@@ -343,7 +350,7 @@ a.menu-toggle-btn {
 
 .templatemo_servicetext {
     float: left;
-    margin-top: 230px;
+    margin-top: 240px;
 }
 
 .templatemo_hexservices {
@@ -365,7 +372,7 @@ a.menu-toggle-btn {
     position: absolute;
     color: #b69e40;
     font-family: Futura, "Trebuchet MS", Arial, sans-serif;
-    font-size: 42px;
+    font-size: 62px;
     -webkit-transition: all 0.2s ease-in-out;
     -webkit-transition-delay: 0s;
     -moz-transition: all 0.2s ease-in-out 0s;

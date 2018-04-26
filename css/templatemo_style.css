@@ -697,7 +697,7 @@ a:hover .hex_footer {
     height: 388px;
 }
 #menu-3, #menu-1, #menu-5{
-    min-height: 620px;
+    min-height: 655px;
 }
 .templatemo_footer {
     background: #343536;
@@ -1665,7 +1665,20 @@ input[type="button"] {
     margin-left: 7%;
 }
 
+.title-slider{
+    z-index: 9999;
+    text-align: center;
+    bottom: 150px;
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+}
 
+.title-slider p{
+    color: black;
+    font-size: large;
+
+}
 
 
 

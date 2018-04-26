@@ -44,6 +44,7 @@
                       '<a href="#" class="lightbox-previous lightbox-button"></a>' +
                       '<a href="#" class="lightbox-next lightbox-button"></a>' +
                       '</div>' +
+                      '<div id="titleImg" class="title-slider"><p>Тут будет описание фото</p></div>'+
                       '<div href="#" class="lightbox-caption"><p></p></div>' +
                       '</div>'
                     );
@@ -70,7 +71,9 @@
                 plugin.lightbox.fadeIn('fast').append('<span class="lightbox-loading"></span>');
 
                 var img = $('<img src="' + $(plugin.current).attr('href') + '" draggable="false">');
-
+              //  $(".title-slider p", plugin.lightbox).remove();
+               // var pTitle = $(plugin.current).attr('data-title');
+               // console.log('<img src="' + $(plugin.current).attr('href') + '" draggable="false">');
                 $(img).load(function () {
                     $('.lightbox-loading').remove();
                     plugin.lightbox.append(img);

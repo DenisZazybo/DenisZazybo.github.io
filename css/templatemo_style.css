@@ -86,6 +86,7 @@ h3 {
     clear: both;
 }
 
+
 .container-fluid {
     margin: 15px auto;
 }
@@ -929,7 +930,9 @@ and (max-width: 559px) {
     .templatemorow {
         margin: 0 4%;
     }
-
+    .clear990{
+        clear: both;
+    }
     .hexagon2 {
         position: absolute;
         width: 120px;

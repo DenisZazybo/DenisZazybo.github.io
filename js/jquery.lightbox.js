@@ -78,7 +78,7 @@
                     $('.lightbox-loading').remove();
                     plugin.lightbox.append(img);
                     plugin.image = $("img", plugin.lightbox).hide();
-                    $(".title-slider", plugin.lightbox).append('<p>'+pTitle+'</p>');
+                    // $(".title-slider", plugin.lightbox).append('<p>'+pTitle+'</p>');
                     plugin.resizeImage();
                     plugin.setCaption();
                 });

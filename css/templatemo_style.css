@@ -724,7 +724,9 @@ and (max-width: 419px) {
         width: 50%;
         float: left;
     }
-
+    .clear990{
+        clear: both;
+    }
     .templatemorow {
         margin: 0 5%;
     }
@@ -796,7 +798,9 @@ and (max-width: 559px) {
         width: 50%;
         float: left;
     }
-
+    .clear990{
+        clear: both;
+    }
     .templatemorow {
         margin: 0;
     }
@@ -839,7 +843,7 @@ and (max-width: 559px) {
     }
 
     .blok {
-        left: 22%;
+        left: 30%;
     }
 
 }
@@ -849,7 +853,9 @@ and (max-width: 559px) {
         width: 50%;
         float: left;
     }
-
+    .clear990{
+        clear: both;
+    }
     .templatemorow {
         margin: 0 10%;
     }
@@ -901,7 +907,9 @@ and (max-width: 559px) {
     .templatemo_footer .hex_footer {
         float: left;
     }
-
+    .clear990{
+        clear: both;
+    }
     .hexagon-a {
         margin-left: 5px;
     }

@@ -1448,7 +1448,7 @@ and (max-width: 559px) {
     *zoom: 1;
     position: relative;
     min-width: 10%;
-    max-width: 80%;
+   // max-width: 80%;
     padding: 20px;
 
     background: #fff;

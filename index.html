@@ -1158,16 +1158,16 @@
         <div class="md-content">
             <h3>Вызовите бесплатно замерщика с образцами</h3>
             <div>
-                <form>
+                <form role="form" onsubmit="return check_call_form(); return false;" id="forma1">
 
                     <div class="form group with-placeholder">
-                        <input type="text" pattern=".*" required>
+                        <input id="nameUser" type="text" pattern=".*" required>
                         <span>Имя</span>
 
                     </div>
 
                     <div class="form group with-placeholder">
-                        <input type="text" pattern=".*" required>
+                        <input id="phone" type="text" pattern=".*" required>
                         <span>Телефон</span>
                     </div>
 
@@ -1200,6 +1200,41 @@
 
 <!-- footer end -->
 <script>
+
+    function check_call_form() {
+        err = 0;
+
+        //if(!$('#name').val().length > 0){$('#name').next('.errorForm').slideDown();err = 1;}
+        // if(!$('#family').val().length > 0){$('#family').next('.errorForm').slideDown();err = 1;}
+        if (!$('#phone').val().length > 0) {
+            err = 1;
+        }
+        if (!$('#nameUser').val().length > 0) {
+            err = 1;
+        }
+        obj = {
+            name:$('#nameUser').val(),
+            phone:$('#phone').val(),
+        }
+
+        console.log(obj);
+        str = "form_call="+JSON.stringify(obj);alert(str);
+        //  if(!$('#mail').val().length > 0){$('#mail').next('.errorForm').slideDown();err = 1;}
+        if (err === 0) {
+            // Если все поля заполнены, отправляем форму
+            //document.form[0].submit()}
+
+          //  var str = "name="$("#forma1").serialize();
+            $.post("/php/sendForm.php", str, function (data) {
+console.log(data);
+            });
+            $('.md-modal').removeClass("md-show");
+
+        }
+
+        return false;
+    }
+
     $('.gallery_more').click(function () {
         var $this = $(this);
         $this.toggleClass('gallery_more');
@@ -1246,6 +1281,7 @@
         });
 
     }
+
 
 
     init();

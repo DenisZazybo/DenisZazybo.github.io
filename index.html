@@ -1218,7 +1218,7 @@
         }
 
         console.log(obj);
-        str = "form_call="+JSON.stringify(obj);alert(str);
+        str = "form_call="+JSON.stringify(obj); //alert(str);
         //  if(!$('#mail').val().length > 0){$('#mail').next('.errorForm').slideDown();err = 1;}
         if (err === 0) {
             // Если все поля заполнены, отправляем форму
@@ -1226,6 +1226,8 @@
 
           //  var str = "name="$("#forma1").serialize();
             $.post("/php/sendForm.php", str, function (data) {
+                $('#nameUser').val("");
+                $('#phone').val("");
 console.log(data);
             });
             $('.md-modal').removeClass("md-show");

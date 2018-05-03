@@ -19,7 +19,7 @@ html, body {
     color: #0CF;
 }
 .block_center{
-    left:50%;
+    left:60%;
     margin-left:-25%;
 }
 
@@ -911,6 +911,11 @@ and (max-width: 559px) {
     }
 
 }
+@media (max-width: 992px) {
+    .sd-text-left{
+        text-align: left !important;
+    }
+}
 
 @media (max-width: 767px) {
     .templatemo_footer .hex_footer {
@@ -1700,6 +1705,20 @@ input[type="button"] {
     font-size: large;
     bottom: 0px;
 
+}
+
+.mt40{
+    margin-top: 40px !important;
+}
+
+img.img-width{
+    margin-top: 20px;
+    margin-top: 40px;
+    width: 100%;
+}
+
+.w100{
+    width: 100%;
 }
 
 

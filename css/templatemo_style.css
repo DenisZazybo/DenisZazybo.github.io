@@ -491,6 +491,12 @@ a:hover .hex_footer {
     line-height: 40px;
 }
 
+
+.galery-mt{
+    margin-top: 140px;
+}
+
+
 /*------------------------------------------------------
 	Gallery Styles 
 --------------------------------------------------------*/
@@ -804,6 +810,12 @@ and (max-width: 559px) {
     .title-slider{
         bottom: 10px;
     }
+
+    .galery-mt{
+        margin-top: 90px;
+        font-size: 10px;
+    }
+
     .clear990{
         clear: both;
     }
@@ -1719,10 +1731,6 @@ img.img-width{
 
 .w100{
     width: 100%;
-}
-
-.galery-mt{
-    margin-top: 140px;
 }
 
 

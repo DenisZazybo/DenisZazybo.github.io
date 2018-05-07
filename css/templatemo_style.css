@@ -1188,8 +1188,8 @@ and (max-width: 559px) {
 }
 
 .img-circle {
-    background-color: 	#b69e40
-
+    /*background-color: 	#b69e40*/
+    background-color: 	#ece72a
 
 ;
     box-sizing: content-box;
@@ -1261,7 +1261,7 @@ and (max-width: 559px) {
     -moz-border-radius: 100%;
     border-radius: 100%;
     border: 2px solid transparent;
-    opacity: .7;
+    opacity: .8;
 }
 
 .img-circleblock {

@@ -7,7 +7,7 @@ if(isset($_POST["form_call"])){
 
     $order_date = date('j').'.'.date('m').'.'.date('Y');
 
-
+   //temnofff@list.ru
     $recepients = 'test@mail.ru';
 
     $header = "Content-Type: text/html; charset=utf-8";

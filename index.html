@@ -1064,7 +1064,7 @@
                     <div class="templatemo_address">
                         <ul>
                             <li class="left fa fa-map-marker"></li>
-                            <li class="right">Nulla ut tellus, sit amet urna, <br>scelerisque pretium 10960</li>
+                            <li class="right">Работаем в городе Минске</li>
                             <li class="clear"></li>
                             <li class="left fa fa-phone"></li>
                             <li class="right"><a href="tel:+375255188888">+375 25 5188888</a></li>
@@ -1195,8 +1195,8 @@
 
     function initMap() {
         map = new google.maps.Map(document.getElementById('templatemo_map'), {
-            center: {lat: 53.907423, lng: 27.536724},
-            zoom: 11
+            center: {lat: 53.907423, lng: 27.568724},
+            zoom: 10
         });
     }
 </script>
@@ -1234,7 +1234,7 @@
             $.post("/php/sendForm.php", str, function (data) {
                 $('#nameUser').val("");
                 $('#phone').val("");
-console.log(data);
+//console.log(data);
             });
             $('.md-modal').removeClass("md-show");
 

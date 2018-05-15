@@ -1733,6 +1733,24 @@ img.img-width{
     width: 100%;
 }
 
+.p_news{
+    font-size: 26px;
+    color: #b79e41 ;
+}
+
+@-webkit-keyframes pulsate {
+    50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.8), 0 0 3px #ffd, 0 0 8px #fff; }
+}
+@keyframes pulsate {
+    50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.8), 0 0 3px #ffd, 0 0 8px #fff; }
+}
+#blink7 {
+    color: #b79e41;
+    text-shadow: 0 -1px rgba(0,0,0,.1);
+    -webkit-animation: pulsate 5.2s linear infinite;
+    animation: pulsate 5.2s linear infinite;
+}
+
 
 
 

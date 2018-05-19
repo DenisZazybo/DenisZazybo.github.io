@@ -3,7 +3,7 @@
 jQuery(document).ready(function($){
 
 	/************** Menu Content Opening *********************/
-	$(".main_menu a, .responsive_menu a").click(function(){
+	$(".main_menu a, .responsive_menu a, a.cat").click(function(){
 		var id =  $(this).attr('class');
 		id = id.split('-');
 		$("#menu-container .content").hide();
@@ -40,7 +40,7 @@ jQuery(document).ready(function($){
 		return false;
 	});
 
-	$(".main_menu a.templatemo_page3, .responsive_menu a.templatemo_page3").click(function(){
+	$(".main_menu a.templatemo_page3, .responsive_menu a.templatemo_page3, a.cat").click(function(){
 		$("#menu-container .services").addClass("animated fadeInDown").show();
 		$(".our-services").show();
 		$(this).addClass('active');

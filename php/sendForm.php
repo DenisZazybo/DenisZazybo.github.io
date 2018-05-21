@@ -8,7 +8,7 @@ if(isset($_POST["form_call"])){
     $order_date = date('j').'.'.date('m').'.'.date('Y');
 
    //temnofff@list.ru
-    $recepients = 'test@mail.ru';
+    $recepients = 'temnoffby@gmail.com';
 
     $header = "Content-Type: text/html; charset=utf-8";
 
@@ -22,7 +22,7 @@ if(isset($_POST["form_call"])){
         $theme = 'Поступило сообщение с сайта';
  //   }
 
-  //  $res=@mail($recepients, $theme, $order_message, $header);
+   $res=@mail($recepients, $theme, $order_message, $header);
 
 
 
@@ -32,6 +32,35 @@ if(isset($_POST["form_call"])){
 
 
    // var_dump($form->name);
+} elseif($_POST["form_mess"]){
+    $form = json_decode($_POST["form_mess"]);
+
+    @$name = trim(htmlspecialchars(stripslashes($form->name)));
+    @$phone = trim(htmlspecialchars(stripslashes($form->phone)));
+    @$subject = trim(htmlspecialchars(stripslashes($form->subject)));
+    @$message = trim(htmlspecialchars(stripslashes($form->message)));
+
+    $order_date = date('j').'.'.date('m').'.'.date('Y');
+
+    $recepients = 'temnoffby@gmail.com';
+    $order_message = '<b>'.$order_date.' поступило Сообщение с сайта: </b><br /><br />';
+    $order_message .= 'Фамилия/Организация : '.$name.'<br />';
+    // $order_message .= 'Имя  : '.$name1.'<br />';
+    $order_message .= 'Телефон : '.$phone.'<br />';
+    $order_message .= 'Тема : '.$subject.'<br />';
+    $order_message .= 'Сообщение : '.$message.'<br />';
+    $theme = $subject;
+    //   }
+
+      $res=@mail($recepients, $theme, $order_message, $header);
+
+
+
+    echo '<p><strong>Результат отправки</strong></p>';
+    if($res)echo '<p>Сообщение отправлено!</p>';
+    else echo '<p class="error">К сожалению, письмо не отправлено, попытайтесь еще раз.</p>';
+
+    $header = "Content-Type: text/html; charset=utf-8";
 }
 
   @ $form_is_sent = $_POST['form_is_sent'];

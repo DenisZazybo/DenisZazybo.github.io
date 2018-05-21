@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <head>
+    <meta name="yandex-verification" content="baed2dbce75db95c" />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119355950-1"></script>
     <script>
@@ -9,7 +10,6 @@
         gtag('config', 'UA-119355950-1');
     </script>
     <!-- Yandex.Metrika counter -->
-    <meta name="yandex-verification" content="baed2dbce75db95c" />
     <script type="text/javascript" >
         (function (d, w, c) {
             (w[c] = w[c] || []).push(function() {
@@ -1114,9 +1114,9 @@
                     <!--nec congue ornare.</p>-->
                     <div class="templatemo_address">
                         <ul>
-                            <li class="left fa fa-map-marker"></li>
-                            <li class="right">Работаем в городе Минске</li>
-                            <li class="clear"></li>
+                            <!--<li class="left fa fa-map-marker"></li>-->
+                            <!--<li class="right">Работаем в городе Минске</li>-->
+                            <!--<li class="clear"></li>-->
                             <li class="left fa fa-phone"></li>
                             <li class="right"><a href="tel:+375293919888">+375 29 391 98 88</a></li>
                             <li class="clear"></li>
@@ -1126,8 +1126,8 @@
                             <li class="left fa fa-vimeo-square"></li>
                             <li class="right"><a href="tel:+375255188888">+375 25 518 88 88</a></li>
                             <li class="clear"></li>
-                            <li class="left fa fa-skype"></li>
-                            <li class="right"><a href="skype:login.skyp">temnoff</a></li>
+                            <li class="left fa fa-instagram"></li>
+                            <li class="right"><a href="https://www.instagram.com/temnoff1/"  target="_blank">temnoff</a></li>
                             <li class="clear"></li>
                             <li class="left fa fa-envelope"></li>
                             <li class="right">temnoffby@gmail.com</li>
@@ -1135,25 +1135,26 @@
                     </div>
                 </div>
                 <div class="col-md-5 col-sm-12">
-                    <form role="form">
+                    <div class="templatemo_contacttitle">Сообщение</div>
+                    <form role="form" onsubmit="return check_mess_form(); return false;" id="forma2">
                         <div class="templatemo_form">
-                            <input name="fullname" type="text" class="form-control" id="fullname"
-                                   placeholder="Ваше имя" maxlength="40">
+                            <input name="fullname" id="fullname" type="text" class="form-control" id="fullname"
+                                   placeholder="Имя" maxlength="40">
                         </div>
                         <div class="templatemo_form">
-                            <input name="email" type="text" class="form-control" id="email" placeholder="Ваш Email"
+                            <input name="email" id="tel" type="text" class="form-control" id="tel" placeholder="Телефон"
                                    maxlength="40">
                         </div>
                         <div class="templatemo_form">
-                            <input name="subject" type="text" class="form-control" id="subject" placeholder="Тема"
+                            <input name="subject"  id="subject" type="text" class="form-control" id="subject" placeholder="Тема"
                                    maxlength="40">
                         </div>
                         <div class="templatemo_form">
-                            <textarea name="message" rows="10" class="form-control" id="message"
-                                      placeholder="Ваше сообщение"></textarea>
+                            <textarea name="message" id="message" rows="10" class="form-control" id="message"
+                                      placeholder="Сообщение"></textarea>
                         </div>
                         <div class="templatemo_form">
-                            <button type="button" class="btn btn-primary">Отправить сообшение</button>
+                            <button type="submit" class="btn btn-primary">Отправить сообшение</button>
                         </div>
                     </form>
                 </div>
@@ -1280,7 +1281,6 @@
             phone:$('#phone').val(),
         }
 
-        console.log(obj);
         str = "form_call="+JSON.stringify(obj); //alert(str);
         //  if(!$('#mail').val().length > 0){$('#mail').next('.errorForm').slideDown();err = 1;}
         if (err === 0) {
@@ -1295,6 +1295,50 @@
             });
             $('.md-modal').removeClass("md-show");
 
+        }
+
+        return false;
+    }
+
+    function check_mess_form() {
+        err = 0;
+
+        //if(!$('#name').val().length > 0){$('#name').next('.errorForm').slideDown();err = 1;}
+        // if(!$('#family').val().length > 0){$('#family').next('.errorForm').slideDown();err = 1;}
+        if (!$('#fullname').val().length > 0) {
+            err = 1;
+        }
+        if (!$('#tel').val().length > 0) {
+            err = 1;
+        }
+        if (!$('#subject').val().length > 0) {
+            err = 1;
+        }
+        if (!$('#message').val().length > 0) {
+            err = 1;
+        }
+        obj = {
+            name:$('#fullname').val(),
+            phone:$('#tel').val(),
+            subject:$('#subject').val(),
+            message:$('#message').val(),
+        }
+
+        console.log(obj);
+        str = "form_mess="+JSON.stringify(obj); //alert(str);
+        //  if(!$('#mail').val().length > 0){$('#mail').next('.errorForm').slideDown();err = 1;}
+        if (err === 0) {
+            // Если все поля заполнены, отправляем форму
+            //document.form[0].submit()}
+
+            //  var str = "name="$("#forma1").serialize();
+            $.post("/php/sendForm.php", str, function (data) {
+                $('#fullname').val("")
+                $('#email').val("")
+                $('#subject').val("")
+                $('#message').val("")
+//console.log(data);
+            });
         }
 
         return false;

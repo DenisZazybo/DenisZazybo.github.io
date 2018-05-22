@@ -108,6 +108,22 @@
                             Контакты</a></li>
                     </ul>
                 </div> <!-- /.col-md-12 -->
+                <div class="row clear heder_phone">
+                    <div class="col-sm-6 mp30">
+
+                    </div>
+                    <div class="col-sm-6 mp30 border_phone">
+                        <div class="col-sm-2 ph">
+                            <span class="fa fa-phone icon_phone"></span>
+                        </div>
+                        <div class="col-sm-10">
+                            <span>Life: <a href="tel:+375255188888">+375 25 51 88888</a></span> <br>
+                            <span>Velcome: <a href="tel:+375293919888">+375 29 39 19 888</a></span>
+                        </div>
+
+                    </div>
+                </div>
+
             </div> <!-- /.row -->
         </div> <!-- /.container -->
     </div> <!-- /.main-navigation -->
@@ -1334,7 +1350,7 @@
             //  var str = "name="$("#forma1").serialize();
             $.post("/php/sendForm.php", str, function (data) {
                 $('#fullname').val("")
-                $('#email').val("")
+                $('#tel').val("")
                 $('#subject').val("")
                 $('#message').val("")
 //console.log(data);

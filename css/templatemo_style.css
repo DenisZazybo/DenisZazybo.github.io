@@ -1,11 +1,3 @@
-/* 
-
-Polygon Template
-
-http://www.templatemo.com/tm-400-polygon
-
-*/
-
 html, body {
     font-family: Tahoma, Arial;
     padding: 0px;
@@ -726,6 +718,9 @@ a:hover .hex_footer {
 @media only screen
 and (min-device-width: 320px)
 and (max-width: 419px) {
+   .icon_phone{
+       margin-top: 5px !important;
+   }
     .hex {
         width: 50%;
         float: left;
@@ -807,6 +802,9 @@ and (max-width: 559px) {
         width: 50%;
         float: left;
     }
+    .icon_phone{
+        margin-top: 5px !important;
+    }
     .title-slider{
         bottom: 10px;
     }
@@ -867,6 +865,9 @@ and (max-width: 559px) {
 }
 
 @media (min-width: 560px) and (max-width: 767px) {
+    .icon_phone{
+        margin-top: 5px !important;
+    }
     .hex {
         width: 50%;
         float: left;
@@ -1692,7 +1693,9 @@ input[type="button"] {
 .m-t{
     margin-top: 10%;
 }
-
+.mp30{
+    margin-top: 20px;
+}
 .md-content h3{
     font-size: 2rem;
     color: black;
@@ -1740,6 +1743,23 @@ img.img-width{
 .p_price{
     font-size: 18px;
 
+}
+.heder_phone{
+    font-size: 20px;
+
+}
+.border_phone{
+    padding: 5px;
+    border: #b79e41 2px solid;
+    border-radius: 5px;
+}
+.icon_phone{
+    font-size: 40px !important;
+    margin-top: 15%;
+    margin-bottom: 2px !important;
+}
+.ph{
+    vertical-align: middle;
 }
 .collor_c{
     color: #b79e41 ;

@@ -964,15 +964,34 @@
     </div>
 
         <!--button calback-->
-
-        <a class="popup-text" href="#small-dialog" data-effect="mfp-zoom-out" id="popup__toggle">
-            <div class="circlephone" style="transform-origin: center;"></div>
-            <div class="circle-fill" style="transform-origin: center;"></div>
-            <div class="img-circle" style="transform-origin: center;">
-                <div class="img-circleblock md-trigger" data-modal="modal-6" style="transform-origin: center;"></div>
+        <div class="bg-holder">
+            <div class="bg-content">
+                <div class="container">
+                    <a class="popup-text" href="#small-dialog" data-effect="mfp-zoom-out" id="popup__toggle">
+                        <div class="circlephone" style="transform-origin: center;"></div>
+                        <div class="circle-fill" style="transform-origin: center;"></div>
+                        <div class="img-circle" style="transform-origin: center;">
+                            <div class="img-circleblock md-trigger" data-modal="modal-6"
+                                 style="transform-origin: center;"></div>
+                        </div>
+                    </a>
+                    <div id="small-dialog" class="mfp-with-anim mfp-hide mfp-dialog">
+                        <h4>Заказать звонок</h4>
+                        <form>
+                            <div class="form-group form-group-lg">
+                                <label>Имя</label>
+                                <input class="form-control" placeholder="Имя">
+                            </div>
+                            <div class="form-group form-group-lg">
+                                <label>Телефон</label>
+                                <input class="form-control" type="tel" placeholder="Телефон">
+                            </div>
+                            <input class="btn btn-primary" type="submit" value="Заказать">
+                        </form>
+                    </div>
+                </div>
             </div>
-        </a>
-
+        </div>
         <footer id="main-footer">
             <div class="container">
                 <div class="row row-wrap">
@@ -1040,19 +1059,7 @@
                 </div>
             </div>
         </footer>
-        <div id="small-dialog" class="mfp-with-anim mfp-hide mfp-dialog">
-            <h4>Заказать звонок</h4>
-            <form>
-                <div class="form-group form-group-lg">
-                    <label>Имя</label>
-                    <input class="form-control"  placeholder="Имя">
-                </div>
-                <div class="form-group form-group-lg">
-                    <label>Телефон</label>
-                    <input class="form-control" type="tel" placeholder="Телефон">
-                </div>
-                <input class="btn btn-primary" type="submit" value="Заказать">
-            </form> </div>
+
 
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.js"></script>
@@ -1075,6 +1082,10 @@
         <script src="js/gridrotator.js"></script>
         <script src="js/custom.js"></script>
     </div>
+
+
+
+
 </body>
 
 </html>

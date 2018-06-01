@@ -127,12 +127,6 @@
         </div>
         <!-- END TOP AREA  -->
 
-
-
-
-
-
-
         <div class="container">
             <div class="search-tabs search-tabs-bg search-tabs-nobox search-tabs-lift-top">
                 <div class="tabbable">
@@ -417,6 +411,7 @@
             </div>
         </div>
 
+
         <div class="bg-holder">
            <div class="bg-content">
                <div class="container">
@@ -459,6 +454,7 @@
         </div>
            </div>
         </div>
+
 
         <div class="bg-holder">
             <div class="bg-content">
@@ -503,6 +499,7 @@
     </div>
             </div>
         </div>
+
 
         <div class="bg-holder">
         <div class="bg-mask"></div>
@@ -596,6 +593,7 @@
 
 
     </div>
+
 
         <div class="bg-holder">
             <div class="bg-content">
@@ -873,7 +871,6 @@
         </div>
 
 
-
         <div class="bg-holder">
             <div class="bg-content">
                 <div class="bg-color text-white">
@@ -899,9 +896,7 @@
         </div>
 
 
-
-
-    <div class="container">
+        <div class="container">
         <div id="popup-gallery">
             <div class="row row-col-gap">
                 <div class="col-md-4">
@@ -968,7 +963,15 @@
         </div>
     </div>
 
+        <!--button calback-->
 
+        <a class="popup-text" href="#small-dialog" data-effect="mfp-zoom-out" id="popup__toggle">
+            <div class="circlephone" style="transform-origin: center;"></div>
+            <div class="circle-fill" style="transform-origin: center;"></div>
+            <div class="img-circle" style="transform-origin: center;">
+                <div class="img-circleblock md-trigger" data-modal="modal-6" style="transform-origin: center;"></div>
+            </div>
+        </a>
 
         <footer id="main-footer">
             <div class="container">
@@ -1037,8 +1040,19 @@
                 </div>
             </div>
         </footer>
-
-
+        <div id="small-dialog" class="mfp-with-anim mfp-hide mfp-dialog">
+            <h4>Заказать звонок</h4>
+            <form>
+                <div class="form-group form-group-lg">
+                    <label>Имя</label>
+                    <input class="form-control"  placeholder="Имя">
+                </div>
+                <div class="form-group form-group-lg">
+                    <label>Телефон</label>
+                    <input class="form-control" type="tel" placeholder="Телефон">
+                </div>
+                <input class="btn btn-primary" type="submit" value="Заказать">
+            </form> </div>
 
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.js"></script>

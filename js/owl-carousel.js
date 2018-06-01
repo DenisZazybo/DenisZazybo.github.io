@@ -219,6 +219,7 @@ if (typeof Object.create !== "function") {
         },
 
         updateItems: function() {
+
             var base = this,
                 width, i;
 
@@ -340,7 +341,7 @@ if (typeof Object.create !== "function") {
         appendWrapperSizes: function() {
             var base = this,
                 width = base.$owlItems.length * base.itemWidth;
-
+//console.log(width * 2);
             base.$owlWrapper.css({
                 "width": width * 2,
                 "left": 0

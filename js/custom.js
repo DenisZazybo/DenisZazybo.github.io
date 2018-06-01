@@ -190,12 +190,12 @@ $(document).ready(
 
         owlCarousel.owlCarousel({
             items: owlItems,
-            navigation: true,
-            navigationText: ['', '']
+           // navigation: true,
+           // navigationText: ['', '']
         });
-
+        //
         owlCarouselSlider.owlCarousel({
-            slideSpeed: 300,
+            slideSpeed: 400,
             paginationSpeed: 400,
             // pagination: owlSliderPagination,
             singleItem: true,

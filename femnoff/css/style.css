@@ -1343,7 +1343,7 @@ h2.sec-head {
 /*--social-icons--*/
 /*-- newsletter --*/
 .newsletter{
-	margin:3em 0 0;
+	/*margin:3em 0 0;*/
 	text-align:center;
 	padding-bottom:5em;
 }
@@ -2720,4 +2720,8 @@ p.desc2{
 
 .bottom-information:hover{
     background: #2c3e50;
+}
+
+.mt4em{
+    margin-top: 1em;
 }

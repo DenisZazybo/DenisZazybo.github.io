@@ -1947,6 +1947,7 @@ h3.tittle{
     font-size: 1.5em;
 }
 }
+
 /*@media (max-width:667px) {*/
 	/*.callbacks_tabs {*/
 		/*bottom: -14%;*/
@@ -2060,6 +2061,7 @@ h3.tittle{
     /*font-size: 2em;*/
 /*}*/
 /*}*/
+
 @media (max-width:640px) {
 	.callbacks_tabs {
 		bottom: -14%;

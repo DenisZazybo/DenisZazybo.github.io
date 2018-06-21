@@ -467,6 +467,7 @@ label{
 h3.tittle {
     font-size: 3em;
 }
+
 .ab-text {
     text-align: center;
     background:#f1f0f0;
@@ -476,7 +477,7 @@ h3.tittle {
     color: #777;
     line-height: 1.9em;
     font-size: 0.875em;
-    margin: 0em 0 1.5em;
+    margin: 0em 0 1em;
     text-align: left;
 }
 .ab-left {
@@ -639,8 +640,12 @@ figure.effect-jazz:hover p {
 	-webkit-transform: scale3d(1,1,1);
 	transform: scale3d(1,1,1);
 }
+.price{
+    font-size: 2em;
+    font-weight: bold;
+}
 .h-f {
-    margin-bottom: 2em;
+    /*margin-bottom: 2em;*/
 }
 .h-f.one {
     margin-bottom:0em;
@@ -825,6 +830,7 @@ figure.effect-jazz:hover p {
 	}
 .about-section {
     margin-top: 4em;
+    background: #f1f0f0;
 }
 /*--team--*/
 .team-section ul li {
@@ -2688,4 +2694,30 @@ span.menu {
 #review {
     padding: 0em 0 0 0;
 }
+}
+
+.mt10. p.mt10{
+    margin-top: 10px;!important;
+}
+
+p.desc1{
+    margin-bottom: 0.01em;!important;
+}
+p.desc2{
+    margin-bottom: 0.01em;!important;
+    font-size: 0.8em;!important;
+}
+.bottom-information{
+    outline: none;
+    padding: 9px 11px 11px;
+    font-size: 1em;
+    color: #fff;
+    background: #31c59d;
+    border: none;
+    margin-top: 20px;
+
+}
+
+.bottom-information:hover{
+    background: #2c3e50;
 }

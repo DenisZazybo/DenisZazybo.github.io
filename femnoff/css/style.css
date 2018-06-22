@@ -72,7 +72,7 @@ label{
 }
 .logo a h1 {
     font-size: 2.5em;
-    color: #31c59d;
+    color: #b79e41;
     text-transform: uppercase;
 }
 .logo a span {
@@ -83,7 +83,7 @@ label{
 }
 .logo p {
     font-size: 0.8em;
-    color: #31c59d;
+    color: #b79e41;
     text-transform: uppercase;
     letter-spacing: 3px;
     padding: 0;
@@ -146,7 +146,7 @@ label{
     overflow: hidden;
     padding: 0 10px;
     max-height: 0;
-    color:#31c59d;
+    color:#b79e41;
     content: attr(data-hover);
     -webkit-transition: max-height 0.5s;
     -moz-transition: max-height 0.5s;
@@ -186,7 +186,7 @@ label{
 		z-index: 999;
 		position: absolute;
 		width: 92%;
-		background: #31c59d;
+		background: #b79e41;
 		text-align: center;
 	}
 	.top-menu li a {
@@ -387,8 +387,8 @@ label{
   -ms-border-radius:50%;
 }
 .callbacks_here a:after{
-     background:#31c59d;
-    border: 2px solid #31c59d;
+     background:#b79e41;
+    border: 2px solid #b79e41;
 }
 .banner-info {
        padding: 5em 2em;
@@ -399,7 +399,7 @@ label{
 .banner-info h3 {
     font-size: 3em;
     font-weight: 400;
-    color:#31c59d;
+    color:#b79e41;
 	margin:0;
 }
 .banner-info p {
@@ -408,13 +408,13 @@ label{
     margin: 1em 0;
 }
 .banner-info span {
-    color: #31c59d;
+    color: #b79e41;
     letter-spacing: 4px;
     font-size: 0.9em;
 }
 .arrows{
 	    position:relative;
-		color:#31c59d;
+		color:#b79e41;
 		font-size:2em;
 }
 .arrows:before{
@@ -442,7 +442,7 @@ label{
 }
 .arrows-two {
     position: relative;
-    color: #31c59d;
+    color: #b79e41;
     font-size: 2em;
 }
 .arrows-two:before {
@@ -613,7 +613,7 @@ figure.effect-jazz h4 {
     padding-top: 50%;
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
-    color: #31c59d;
+    color: #b79e41;
     font-weight: 400;
     font-size: 1.8em;
 }
@@ -656,7 +656,7 @@ figure.effect-jazz:hover p {
 }
 .start a{
 	padding: 15px 35px;
-    background:#31c59d;
+    background:#b79e41;
     font-size: 1em;
     color: #fff;
     text-decoration: none;
@@ -754,7 +754,7 @@ figure.effect-jazz:hover p {
 .diff-grid h4{
     font-size: 25px;
     margin: 20px 0 19px;
-    color: #31c59d;
+    color: #b79e41;
 }
 .diff-grid p {
     color: #464646;
@@ -879,7 +879,7 @@ figure.effect-jazz:hover p {
 	   text-align:center;
 }
 .s-1 h3,.s-2 h3,.s-3 h3,.s-1 h3,.s-2 h3,.s-4 h3{
-	color: #31c59d;
+	color: #b79e41;
     font-size: 1.4em;
     text-transform: uppercase;
     line-height: 1.5em;
@@ -950,7 +950,7 @@ figure.effect-jazz:hover p {
 }
 .view-fifth h4 {
    font-size: 20px;
-    border-bottom: 1px solid #31c59d;
+    border-bottom: 1px solid #b79e41;
     color: #fff;
     line-height: 1.5em;
     font-weight: 600;
@@ -977,7 +977,7 @@ figure.effect-jazz:hover p {
 }
 .arrows-serve{
 	    position:relative;
-		color:#31c59d;
+		color:#b79e41;
 		font-size:2em;
 }
 .arrows-serve:before{
@@ -1000,7 +1000,7 @@ figure.effect-jazz:hover p {
 }
 .arrows-serve.test{
 	    position:relative;
-		color:#31c59d;
+		color:#b79e41;
 		font-size:2em;
 }
 .arrows-serve.test:before{
@@ -1046,7 +1046,7 @@ h4.tittle{
 }
 .test-monials h5{
       font-size: 2em;
-    color: #31c59d;
+    color: #b79e41;
     text-transform: none;
     margin-top: 0.7em;
 	
@@ -1293,7 +1293,7 @@ h4.tittle{
 .info-gal-con h4 {
     font-size:45px;
     margin-bottom: 30px;
-    color: #31c59d;
+    color: #b79e41;
 }
 .info-gal-con p {
     font-size: 14px;
@@ -1315,7 +1315,7 @@ h4.tittle{
   padding-top:8em;
 }
 .bottom-top h3 {
-    color:#31c59d;
+    color:#b79e41;
     font-size: 3em;
 }
 .bottom-top p {
@@ -1376,7 +1376,7 @@ h2.sec-head {
     padding: 9px 0 11px;
     font-size: 1em;
     color: #fff;
-    background: #31c59d;
+    background: #b79e41;
     border: none;
     width: 20%;
 }
@@ -2712,7 +2712,7 @@ p.desc2{
     padding: 9px 11px 11px;
     font-size: 1em;
     color: #fff;
-    background: #31c59d;
+    background: #b79e41;
     border: none;
     margin-top: 20px;
 
@@ -2729,9 +2729,9 @@ p.desc2{
 
  /*кнопка*/
 #popup__toggle{bottom:25px; left:160px; position:fixed;z-index:999;}
-.img-circle{background-color:#29AEE3;box-sizing:content-box;-webkit-box-sizing:content-box;}
-.circlephone{box-sizing:content-box;-webkit-box-sizing:content-box;border: 2px solid #29AEE3;width:150px;height:150px;bottom:-25px;right:10px;position:absolute;-webkit-border-radius:100%;-moz-border-radius: 100%;border-radius: 100%;opacity: .5;-webkit-animation: circle-anim 2.4s infinite ease-in-out !important;-moz-animation: circle-anim 2.4s infinite ease-in-out !important;-ms-animation: circle-anim 2.4s infinite ease-in-out !important;-o-animation: circle-anim 2.4s infinite ease-in-out !important;animation: circle-anim 2.4s infinite ease-in-out !important;-webkit-transition: all .5s;-moz-transition: all .5s;-o-transition: all .5s;transition: all 0.5s;}
-.circle-fill{box-sizing:content-box;-webkit-box-sizing:content-box;background-color:#29AEE3;width:100px;height:100px;bottom:0px;right:35px;position:absolute;-webkit-border-radius: 100%;-moz-border-radius: 100%;border-radius: 100%;border: 2px solid transparent;-webkit-animation: circle-fill-anim 2.3s infinite ease-in-out;-moz-animation: circle-fill-anim 2.3s infinite ease-in-out;-ms-animation: circle-fill-anim 2.3s infinite ease-in-out;-o-animation: circle-fill-anim 2.3s infinite ease-in-out;animation: circle-fill-anim 2.3s infinite ease-in-out;-webkit-transition: all .5s;-moz-transition: all .5s;-o-transition: all .5s;transition: all 0.5s;}
+.img-circle{background-color:#b79e41;;box-sizing:content-box;-webkit-box-sizing:content-box;}
+.circlephone{box-sizing:content-box;-webkit-box-sizing:content-box;border: 2px solid #b79e41;width:150px;height:150px;bottom:-25px;right:10px;position:absolute;-webkit-border-radius:100%;-moz-border-radius: 100%;border-radius: 100%;opacity: .5;-webkit-animation: circle-anim 2.4s infinite ease-in-out !important;-moz-animation: circle-anim 2.4s infinite ease-in-out !important;-ms-animation: circle-anim 2.4s infinite ease-in-out !important;-o-animation: circle-anim 2.4s infinite ease-in-out !important;animation: circle-anim 2.4s infinite ease-in-out !important;-webkit-transition: all .5s;-moz-transition: all .5s;-o-transition: all .5s;transition: all 0.5s;}
+.circle-fill{box-sizing:content-box;-webkit-box-sizing:content-box;background-color:#b79e41;width:100px;height:100px;bottom:0px;right:35px;position:absolute;-webkit-border-radius: 100%;-moz-border-radius: 100%;border-radius: 100%;border: 2px solid transparent;-webkit-animation: circle-fill-anim 2.3s infinite ease-in-out;-moz-animation: circle-fill-anim 2.3s infinite ease-in-out;-ms-animation: circle-fill-anim 2.3s infinite ease-in-out;-o-animation: circle-fill-anim 2.3s infinite ease-in-out;animation: circle-fill-anim 2.3s infinite ease-in-out;-webkit-transition: all .5s;-moz-transition: all .5s;-o-transition: all .5s;transition: all 0.5s;}
 .img-circle{box-sizing:content-box;-webkit-box-sizing:content-box;width:72px;height:72px;bottom: 14px;right: 49px;position:absolute;-webkit-border-radius: 100%;-moz-border-radius: 100%;border-radius: 100%;border: 2px solid transparent;opacity: .7;}
 .img-circleblock{box-sizing:content-box;-webkit-box-sizing:content-box;width:72px;height:72px;background-image:url(../images/phone.png);background-position: center center;background-repeat:no-repeat;animation-name: tossing;-webkit-animation-name: tossing;animation-duration: 1.5s;-webkit-animation-duration: 1.5s;animation-iteration-count: infinite;-webkit-animation-iteration-count: infinite;}
 .img-circle:hover{opacity: 1;}
@@ -2961,7 +2961,19 @@ p.desc2{
 .mt40{
     margin-top: 40px !important;
 }
+.md-content {
 
+    *display: inline;
+    *zoom: 1;
+    position: relative;
+    min-width: 10%;
+// max-width: 80%;
+    padding: 20px;
+
+    background: #fff;
+    vertical-align: middle;
+    opacity: 0.7;
+}
 img.img-width{
     margin-top: 20px;
     margin-top: 40px;

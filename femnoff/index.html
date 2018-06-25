@@ -49,6 +49,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 		<div class="banner w3l" id="home">
 		<div class="header-bottom">
 		     <div class="container">
+				 <div class="fixed-header mb30">
+					 <div class="col-md-7 text-header">
+						 <div class="col-sm-6 text-header">Мтс:<a> +375 29 526-62-62</a></div>
+						 <div class="col-sm-6 text-header">Велком:<a> +375 29 526-62-62</a></div>
+					 </div>
+					 <div class="col-md-4 text-header">Время работы: 9:00 - 21 00</div>
+				 </div>
 			  <div class="fixed-header">
 			      <!--logo-->
 			       <div class="logo wow fadeInLeft animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
@@ -915,6 +922,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
         var overlay = document.querySelector('.md-overlay');
         var el = document.querySelector('.md-trigger');
+        var but = document.querySelector('.bottom-information')
         var modal = document.querySelector('#' + el.getAttribute('data-modal')),
             close = modal.querySelector('.md-close');
 
@@ -936,9 +944,16 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             overlay.addEventListener('click', removeModalHandler);
 
         });
+        but.addEventListener('click', function (ev) {
+            modal.classList.add('md-show');
+            overlay.removeEventListener('click', removeModalHandler);
+            overlay.addEventListener('click', removeModalHandler);
+
+        });
 
         close.addEventListener('click', function (ev) {
             ev.stopPropagation();
+            but.stopPropagation();
             removeModalHandler();
         });
 

@@ -93,7 +93,7 @@ label{
 /*-- sticky-nav --*/
 .header-bottom {
    padding: 1.5em 0em;
-    
+    background-color: rgba(0, 0, 0, 0.59);
     margin: 0 auto;
     width: 100%;
     text-align: center;
@@ -3024,4 +3024,17 @@ img.img-width{
     text-shadow: 0 -1px rgba(0,0,0,.1);
     -webkit-animation: pulsate 5.2s linear infinite;
     animation: pulsate 5.2s linear infinite;
+}
+
+.text-header, .text-header a{
+    color: #FFFFFF;
+    font-size: 14px;
+}
+.text-header a:hover{
+    color: #b79e41;
+    cursor: pointer;
+}
+
+.mb30{
+    margin-bottom: 30px;
 }

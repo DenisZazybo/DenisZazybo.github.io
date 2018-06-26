@@ -1622,6 +1622,10 @@ h2.sec-head {
 		padding: 0 10px;
 		margin: 0 8px;
 	}
+    .bottom-top{
+        margin-top: 2em;
+        padding: 0em;
+    }
 	.banner-info {
 		padding: 4em 2em;
 		z-index: 999;
@@ -1712,7 +1716,7 @@ h2.sec-head {
     padding: 1em 1em;
 }
 .bottom-top {
-    padding-top: 5em;
+    padding-top: 2em;
 }
 .bottom {
     min-height: 300px;
@@ -1968,6 +1972,9 @@ h3.tittle{
         position: absolute;
 		z-index: 99999;
 	}
+    .bottom-top{
+        padding-top: 0em;
+    }
     .fixed-header.mb30{
         margin-bottom: 0px;!important;
     }
@@ -2001,7 +2008,11 @@ h3.tittle{
     font-size: 1.5em;
 }
 }
-
+@media (max-width:425px) {
+    .btn-z{
+        margin-top: 10px;
+    }
+}
 /*@media (max-width:667px) {*/
 	/*.callbacks_tabs {*/
 		/*bottom: -14%;*/
@@ -2390,7 +2401,7 @@ h3.title {
     font-size: 13px;
 }
 .bottom-top {
-    padding-top: 3em;
+    padding-top: 0em;
 }
 .bottom {
     min-height: 240px;
@@ -2599,7 +2610,7 @@ h3.tittle {
 		font-size: 1.4em;
 	}
 	.bottom-top {
-		padding-top: 2em;
+		padding-top: 0em;
 	}
 	.input__label {
 		display: inline-block;

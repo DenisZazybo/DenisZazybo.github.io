@@ -38,7 +38,14 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<script src="js/jquery.swipebox.min.js"></script> 
 	    <script type="text/javascript">
 			jQuery(function($) {
-				$(".swipebox").swipebox();
+				$(".swipebox").swipebox({
+                    initialIndexOnArray : 0, // which image index to init when a array is passed
+                    hideCloseButtonOnMobile : false, // true will hide the close button on mobile devices
+                    removeBarsOnMobile : true, // false will show top bar on mobile devices
+                    hideBarsDelay : 300000, // delay before hiding bars on desktop
+                    videoMaxWidth : 1140,
+                    loopAtEnd: false
+				});
 			});
 	</script>
 <!-- //swipe box js -->

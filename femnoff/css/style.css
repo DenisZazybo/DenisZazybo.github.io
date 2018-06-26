@@ -1404,6 +1404,15 @@ h2.sec-head {
     border: 1px solid #E4E4E4;
     width: 79%;
 }
+.newsletter input[type="phone"] {
+    outline: none;
+    padding: 10px;
+    font-size: 14px;
+    color: #212121;
+    background: #f5f5f5;
+    border: 1px solid #E4E4E4;
+    width: 79%;}
+
 .newsletter input[type="submit"]{
 	outline: none;
     padding: 9px 0 11px;
@@ -3094,4 +3103,13 @@ img.img-width{
     border: none;
     margin-top: 20px;
     border-radius: 0px;
+}
+
+.thanks{
+    padding-top: 200px;
+    color: #FFFFFF;
+    width: 100%;!important;
+}
+.thanks h3, .thanks p{
+    color: #FFFFFF;
 }

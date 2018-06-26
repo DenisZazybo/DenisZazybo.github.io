@@ -317,8 +317,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="container">
 		<h3>Заказать звонок</h3>
 		<p>Если у вас остались вопросы закажите звонок</p>
-		<form action="#" method="post">
-			<input type="email" name="Phone" value="Телефон" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Телефон';}" required="">
+		<form  role="form" onsubmit="return call_form(); return false;">
+			<input type="phone" id="phone2" name="Phone" value="Телефон" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Телефон';}" required="">
 			<input type="submit" value="Заказать">
 		</form>
 	</div>
@@ -625,7 +625,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
    <!--/reviews-->
 	<div id="review" class="reviews agile-1">
 				<div class="test-monials" id="testimonials">
-					<h4 class="tittle">Видео материалы</h3>
+					<h4 class="tittle">Видео материалы</h4>
 					
 				<!--//screen-gallery-->
 						<div class="sreen-gallery-cursual">
@@ -824,10 +824,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="container wow fadeInUp animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
 		<h2 class="title">Сообщение</h2>
 		
-		<form action="#" method="post">
-			<input type="text" value="Имя" name="Name" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Имя';}">
-			<input type="email address" value="Телефон" name="Phone" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Тетефон';}">
-			<textarea name="Сообщение" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Сообщение';}" required="">Сообщение</textarea>
+		<form role="form" onsubmit="return check_mess_form(); return false;">
+			<input type="text" id="fullname" value="Имя" name="Name" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Имя';}">
+			<input type="email address" id="tel"  value="Телефон" name="Phone" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Тетефон';}">
+			<textarea name="Сообщение" id="message" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Сообщение';}" required="">Сообщение</textarea>
 			<div class="con-form text-center">
 				<input type="submit" value="Отправить">
 			</div>
@@ -993,10 +993,109 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <script src="js/wow.min.js"></script>
 <script>
  new WOW().init();
+var url_thank = "thanks.html"
+ function check_call_form() {
+     err = 0;
+
+     if (!$('#phone').val().length > 0) {
+         err = 1;
+     }
+     if (!$('#nameUser').val().length > 0) {
+         err = 1;
+     }
+     obj = {
+         name:$('#nameUser').val(),
+         phone:$('#phone').val(),
+     }
+
+     str = "form_call="+JSON.stringify(obj); //alert(str);
+     if (err === 0) {
+
+         //  var str = "name="$("#forma1").serialize();
+         $.post("/php/sendForm.php", str, function (data) {
+             $('#nameUser').val("");
+             $('#phone').val("");
+         });
+         $('.md-modal').removeClass("md-show");
+         window.location.href = url_thank;
+     }
+
+     return false;
+ }
+
+ function call_form() {
+     err = 0;
+
+     if (!$('#phone2').val().length > 0) {
+         err = 1;
+     }
+
+     obj = {
+         name: "Неизвестен",
+         phone:$('#phone2').val(),
+     }
+
+     str = "form_call="+JSON.stringify(obj); //alert(str);
+     if (err === 0) {
+         //  var str = "name="$("#forma1").serialize();
+         $.post("/php/sendForm.php", str, function (data) {
+
+             //$('#phone2').val("");
+             window.location.href = url_thank;
+         });
+
+     }
+
+     return false;
+ }
+
+ function check_mess_form() {
+     err = 0;
+
+     //if(!$('#name').val().length > 0){$('#name').next('.errorForm').slideDown();err = 1;}
+     // if(!$('#family').val().length > 0){$('#family').next('.errorForm').slideDown();err = 1;}
+     if (!$('#fullname').val().length > 0) {
+         err = 1;
+     }
+     if (!$('#tel').val().length > 0) {
+         err = 1;
+     }
+
+     if (!$('#message').val().length > 0) {
+         err = 1;
+     }
+     obj = {
+         name:$('#fullname').val(),
+         phone:$('#tel').val(),
+         message:$('#message').val(),
+     }
+
+     console.log(obj);
+     str = "form_mess="+JSON.stringify(obj); //alert(str);
+     //  if(!$('#mail').val().length > 0){$('#mail').next('.errorForm').slideDown();err = 1;}
+     if (err === 0) {
+         // Если все поля заполнены, отправляем форму
+         //document.form[0].submit()}
+
+         //  var str = "name="$("#forma1").serialize();
+         $.post("/php/sendForm.php", str, function (data) {
+             $('#fullname').val("")
+             $('#tel').val("")
+             $('#subject').val("")
+             $('#message').val("")
+             window.location.href = url_thank;
+         });
+     }
+    console.log("error");
+     return false;
+ }
 </script>
 <!-- //animation-effect -->
 <script>
     $(document).ready(function() {
+
+
+
         var navoffeset=$(".header-bottom").offset().top;
         $(window).scroll(function(){
             var scrollpos=$(window).scrollTop();

@@ -105,7 +105,7 @@ label{
 	margin: 0 auto;
 	left:0%;
 	z-index:9999;
-	  background-color: rgba(0, 0, 0, 0.59);
+	  background-color: rgba(0, 0, 0, 0.79);
 }
 /*-- sticky-nav --*/
 .top-menu {
@@ -1040,23 +1040,41 @@ figure.effect-jazz:hover p {
     margin-top: 3em;
 }
 /*--/review--*/
+
+
 #review {
-    background: url("../images/bottom.jpg") no-repeat 0px 0px;
-    padding: 5em 0 0 0;
+    /*background: url("../images/bottom.jpg") no-repeat 0px 0px;*/
+    padding: 1em 0 0 0;
     background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
     -ms-background-size: cover;
     -webkit-background-size: cover;
+    background: #f7f7f7;
     min-height: 540px;
+    position: relative;
 }
+div#review:before {
+    display: block;
+    content: '';
+    position: absolute;
+    background-color: #b79e41;
+    opacity: 0.6;
+    height: 150px;
+    width: 100%;
+    left: 0;
+    top: 50%;
+    margin-top: -50px;
+    z-index: 0;}
+
+
 h3.title {
 	  color:#333;
 	  font-size:3em;
 	  text-align:center;
 }
 h4.tittle{
-	  color:#fff;
+	  color:black;
 	  font-size:3em;
 }
 .test-monials h5{
@@ -1071,7 +1089,7 @@ h4.tittle{
     font-weight: 400;
     line-height: 2em;
     margin: 2em 1em;
-	color:#fff;
+	color: black;
 }
 .test-review img{
 	 border-radius: 50%;
@@ -1688,7 +1706,7 @@ h2.sec-head {
     min-height: 300px;
 }
 h4.tittle {
-    color: #fff;
+    color: black;
     font-size: 2.5em;
 }
 h3.tittle{

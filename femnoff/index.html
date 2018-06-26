@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Decorating  a Interior Category  Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+<title>Decorating  a Interior Category  Flat Bootstrap Responsive Website</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Decorating Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
@@ -47,9 +47,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <body>
 <!--start-home-->
 		<div class="banner w3l" id="home">
-		<div class="header-bottom">
+		<div class="header-bottom fixed">
 		     <div class="container">
-				 <div class="fixed-header mb30">
+				 <div class="fixed-header mb30 mt-50">
 					 <div class="col-md-7 text-header">
 						 <div class="col-sm-6 text-header">Мтс:<a> +375 29 526-62-62</a></div>
 						 <div class="col-sm-6 text-header">Велком:<a> +375 29 526-62-62</a></div>
@@ -243,7 +243,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						<p class="desc2"><b>Особенности</b>: с направляющими и в коробе</p>
 						<p class="desc2"><b>Управление</b>: цепочка - подъем полотна.</p>
 
-						<input type="button" value="Подробнее" class="bottom-information">
+						<input type="button" value="Подробнее" class="bottom-information n1">
 					</div>
 						<div class="col-md-7 ab-left wow fadeInRight animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
 
@@ -316,7 +316,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 				   <p class="desc2"><b>Особенности</b>: с направляющими и в коробе</p>
 				   <p class="desc2"><b>Управление</b>: цепочка - подъем полотна.</p>
 
-				   <input type="button" value="Подробнее" class="bottom-information">
+				   <input type="button" value="Подробнее" class="bottom-information n2">
 
 					</div>
 					<div class="clearfix"> </div>
@@ -905,9 +905,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 					</div>
 
 					<div class="closeCenter m-t">
-						<button type="reset" class="btn btn-outline-light md-close">Отмена</button>
-						<button type="submit" class="btn m-l-10 btn-outline-light">Отправить</button>
 
+						<button type="submit" class="btn btn-outline-light">Отправить</button>
+						<button type="reset" class="btn m-l-10 btn-outline-light md-close">Отмена</button>
 					</div>
 				</form>
 			</div>
@@ -922,7 +922,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
         var overlay = document.querySelector('.md-overlay');
         var el = document.querySelector('.md-trigger');
-        var but = document.querySelector('.bottom-information')
+        var but1 = document.querySelector('.bottom-information.n1');
+        var but2 = document.querySelector('.bottom-information.n2')
         var modal = document.querySelector('#' + el.getAttribute('data-modal')),
             close = modal.querySelector('.md-close');
 
@@ -944,16 +945,32 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             overlay.addEventListener('click', removeModalHandler);
 
         });
-        but.addEventListener('click', function (ev) {
+        but1.addEventListener('click', function (ev) {
             modal.classList.add('md-show');
             overlay.removeEventListener('click', removeModalHandler);
             overlay.addEventListener('click', removeModalHandler);
 
         });
+        but2.addEventListener('click', function (ev) {
+            modal.classList.add('md-show');
+            overlay.removeEventListener('click', removeModalHandler);
+            overlay.addEventListener('click', removeModalHandler);
+
+        });
+        var buts =  $('.bottom-information');
+        // for(var i=0; i<buts.length; i++) {
+        //     buts[i] = addEventListener('click', function (ev) {
+        //         modal.classList.add('md-show');
+        //         overlay.removeEventListener('click', removeModalHandler);
+        //         overlay.addEventListener('click', removeModalHandler);
+        //
+        //     })
+        // }
 
         close.addEventListener('click', function (ev) {
+            console.log("!!!!!###")
             ev.stopPropagation();
-            but.stopPropagation();
+
             removeModalHandler();
         });
 
@@ -979,7 +996,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 										*/
 										
 										$().UItoTop({ easingType: 'easeOutQuart' });
-										
+
 									});
 								</script>
 								<!--end-smooth-scrolling-->

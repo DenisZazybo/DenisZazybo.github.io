@@ -19,7 +19,7 @@
 		}
 	};
 
-	if (header.length) { updateHeader(); }
+	//if (header.length) { updateHeader(); }
 
 	$(window).scroll(function () {
 		//updateHeader();

@@ -54,20 +54,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 						 <div class="col-sm-6 text-header">Мтс:<a> +375 29 526-62-62</a></div>
 						 <div class="col-sm-6 text-header">Велком:<a> +375 29 526-62-62</a></div>
 					 </div>
-					 <div class="col-md-4 text-header">Время работы: 9:00 - 21 00</div>
+					 <div class="col-md-4 text-header">Время работы: 9:00 - 21 00 (Пн-Вс)</div>
 				 </div>
 			  <div class="fixed-header">
 			      <!--logo-->
-			       <div class="logo wow fadeInLeft animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+			       <div class="logo  fadeInLeft animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
                       <a href="index.html"><h1>TEMNOFF</h1></a>
 				   </div>
 					<!--//logo-->
-					<div class="top-menu wow fadeInRight animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
+					<div class="top-menu  fadeInRight animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
 							<span class="menu"> </span>
 							<nav class="link-effect-4" id="link-effect-4">
                               <ul>
 								<li class="active"><a data-hover="Главная" href="index.html">Главная</a></li>
-								<li><a data-hover="Сервис" href="#services" class="scroll">Сервис</a></li>
+								<!--<li><a data-hover="Сервис" href="#services" class="scroll">Сервис</a></li>-->
 								<li><a data-hover="Продукция" href="#about" class="scroll">Продукция</a></li>
 								<li><a data-hover="Галерея" href="#gallery" class="scroll">Галерея</a></li>
 								<!--<li><a data-hover="Отзывы" href="#testimonials" class="scroll">Отзывы</a></li>-->
@@ -87,20 +87,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 								<!-- script-for-menu -->
 
 				 <div class="clearfix"></div>
-					<script>
-				$(document).ready(function() {
-					 var navoffeset=$(".header-bottom").offset().top;
-					 $(window).scroll(function(){
-						var scrollpos=$(window).scrollTop(); 
-						if(scrollpos >=navoffeset){
-							$(".header-bottom").addClass("fixed");
-						}else{
-							$(".header-bottom").removeClass("fixed");
-						}
-					 });
-					 
-				});
-				</script>
+
 			 </div>
 		</div>
 	</div>
@@ -1008,7 +995,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
  new WOW().init();
 </script>
 <!-- //animation-effect -->
+<script>
+    $(document).ready(function() {
+        var navoffeset=$(".header-bottom").offset().top;
+        $(window).scroll(function(){
+            var scrollpos=$(window).scrollTop();
+            if(scrollpos >=navoffeset){
+              //  $(".header-bottom").addClass("fixed");
+            }else{
+              //  $(".header-bottom").removeClass("fixed");
+            }
+        });
 
+    });
+</script>
 </body>
 </html>
 

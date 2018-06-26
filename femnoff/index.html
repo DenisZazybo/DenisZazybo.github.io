@@ -14,8 +14,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
 <script type="applisalonion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/all.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
-<link href="css/iconeffects.css" rel='stylesheet' type='text/css' />
+<!--<link href="css/iconeffects.css" rel='stylesheet' type='text/css' />-->
 <link href="css/style.css" rel='stylesheet' type='text/css' />	
 <link rel="stylesheet" href="css/swipebox.css">
 <script src="js/jquery-1.11.1.min.js"></script>
@@ -335,8 +336,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	    <div class="bottom w3-1">
 		<div class="container">
 		       <div class="bottom-top wow fadeInUp animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-			    <h3>Мы предлагаем вам!</h3>
-				   <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since, Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+			       <h3 class="fon">Мы предлагаем вам!</h3>
+				   <p class="fon f-s">Lorem Ipsum is simply dummy text of the printing and typesetting industry.Lorembeen the industry's standard dummy text ever since, Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
 				   
 			   </div>
 		</div>
@@ -830,7 +831,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="contact_w3agile" id="contact">
 	<div class="container wow fadeInUp animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
 		<h2 class="title">Сообщение</h2>
-		
 		<form role="form" onsubmit="return check_mess_form(); return false;">
 			<input type="text" id="fullname" value="Имя" name="Name" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Имя';}">
 			<input type="email address" id="tel"  value="Телефон" name="Phone" onfocus="this.value='';" onblur="if (this.value == '') {this.value ='Тетефон';}">
@@ -853,19 +853,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 	<div class="footer">
 		<div class="footer-info">
 			<div class="container">	
-				<div class="icons wow fadeInUp animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">	
+				<div class="icons wow fadeInUp animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+
 					<ul>
-						<li><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook"><img src="images/i1.png" alt=""></a></li>
-						<li><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter"><img src="images/i2.png" alt=""> </a></li>
-						<li><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google+"><img src="images/i3.png" alt=""></a></li>
-						<li><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="LinkedIn"><img src="images/i4.png" alt=""> </a></li>
-						<li><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Pinterest"><img src="images/i5.png" alt=""> </a></li>
+						<li><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Instagram"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="VK"><i class="fab fa-vk"></i> </a></li>
+						<li><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Facebook"><i class="fab fa-facebook-f"></i> </a></li>
+						<li><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Phone"><i class="fas fa-phone"></i> </a></li>
 					</ul>
 					<script>$(function () {
 					  $('[data-toggle="tooltip"]').tooltip()
 					})</script>
 				</div>
-				<p>© 2016 Decorating . All rights reserved | Design by <a href="http://w3layouts.com">W3layouts</a></p>					
+				<p>© 2016 Temnoff | <a href="http://w3layouts.com">+375 29 526 36 36</a> |<a href="http://w3layouts.com">+375 29 526 36 36</a></p>
 			</div>
 		</div>
 	</div>
@@ -1100,8 +1100,6 @@ var url_thank = "thanks.html"
 <!-- //animation-effect -->
 <script>
     $(document).ready(function() {
-
-
 
         var navoffeset=$(".header-bottom").offset().top;
         $(window).scroll(function(){

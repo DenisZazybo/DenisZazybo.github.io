@@ -1334,7 +1334,7 @@ h4.tittle{
 }
 /*--bottom-*/
 .bottom{
-  background: url("../images/bottom.jpg") no-repeat 0px 0px;
+  background: url("../images/ban3.jpg") no-repeat 0px 0px;
   padding: 0em 0 0 0;
   background-size: cover;
   -o-background-size: cover;
@@ -1343,16 +1343,19 @@ h4.tittle{
   -webkit-background-size: cover;
   min-height:390px;
 }
+
 .bottom-top{
   text-align:center;
-  padding-top:8em;
+  margin-top:7em;
+  padding: 5px;
+  background-color: rgba(128, 128, 128, 0.8);
 }
 .bottom-top h3 {
-    color:#b79e41;
+    color:#FFFFFF;
     font-size: 3em;
 }
 .bottom-top p {
-    font-size: 0.875em;
+    font-size: 1.1em;
     color: #fff;
     line-height: 1.9em;
     margin: 1em auto;
@@ -3112,4 +3115,9 @@ img.img-width{
 }
 .thanks h3, .thanks p{
     color: #FFFFFF;
+}
+
+.footer i{
+    color: #FFFFFF;
+    font-size: 38px;
 }

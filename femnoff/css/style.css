@@ -656,8 +656,15 @@ figure.effect-jazz:hover p {
 	transform: scale3d(1,1,1);
 }
 .price{
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bold;
+}
+.bottom-top i{
+    color: #FFFFFF;
+    font-size: 6em;
+}
+.bottom-top p{
+  margin: 0px;!important;
 }
 .h-f {
     /*margin-bottom: 2em;*/
@@ -1341,12 +1348,12 @@ h4.tittle{
   -moz-background-size: cover;
   -ms-background-size: cover;
   -webkit-background-size: cover;
-  min-height:390px;
+  min-height:450px;
 }
 
 .bottom-top{
   text-align:center;
-  margin-top:7em;
+  margin-top:6em;
   padding: 5px;
   background-color: rgba(128, 128, 128, 0.8);
 }
@@ -1357,9 +1364,23 @@ h4.tittle{
 .bottom-top p {
     font-size: 1.1em;
     color: #fff;
-    line-height: 1.9em;
-    margin: 1em auto;
-    width: 61%;
+    line-height: 1.4em;
+    margin-top: 20px;
+   /*margin: 1em auto;*/
+    /*width: 61%;*/
+}
+.bottom-top .row{
+   margin-top: 20px;
+}
+.newsletter{
+    margin-top: 4em;
+}
+.bottom-top i{
+    color: #FFFFFF;
+    font-size: 6em;
+}
+.reviews h4{
+    margin-top: 1em;
 }
 a.read.two {
     padding: 0.7em 2em;
@@ -1633,8 +1654,8 @@ h2.sec-head {
 		width: 100%;
 	}
 	.bottom-top p {
-		margin: 1em auto;
-		width: 65%;
+		/*margin: 1em auto;*/
+		/*width: 65%;*/
 	}
 	.callbacks_tabs {
 		bottom: -10%;
@@ -1996,6 +2017,10 @@ h3.tittle{
 	h3.single {
 		margin-bottom: 0.5em;
 	}
+    .bottom-top i{
+        color: #FFFFFF;
+        font-size: 4em;
+    }
 	.blog-single h3 {
 
 		line-height: 2em;

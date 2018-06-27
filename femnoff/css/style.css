@@ -1545,7 +1545,7 @@ h2.sec-head {
     font-size: 23px;
     color: #000;
     outline: none;
-    width: 18%;
+    width: 21%;
     text-transform: uppercase;
     margin: 0 auto;
 	transition:0.5s all;
@@ -1555,8 +1555,8 @@ h2.sec-head {
 	-ms-transition:0.5s all;
 }
 .contact_w3agile form input[type="submit"]:hover,.contact_w3agile form input[type="text"]:hover,.contact_w3agile form input[type="email address"]:hover,.contact_w3agile textarea:hover {
-    border: 2px solid #00d2d4;
-	color:#00d2d4;
+    border: 2px solid #b79e41;
+	color:#b79e41;
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
@@ -1588,7 +1588,8 @@ h2.sec-head {
 }
 .footer ul li {
     display: inline-block;
-    margin-right: 3em;
+    margin-left:  1em;
+    margin-right: 1em;
 }
 .footer ul li:nth-child(5) {
     margin: 0;

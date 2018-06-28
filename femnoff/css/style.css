@@ -2907,7 +2907,6 @@ p.desc2{
     perspective: 600px;
 }
 
-
 .md-modal {
     position: fixed;
     top: 50%;
@@ -2950,7 +2949,6 @@ p.desc2{
     opacity: 1;
     visibility: visible;
 }
-
 
 /* Effect 6: side fall */
 .md-effect-6.md-modal {
@@ -3181,6 +3179,6 @@ img.img-width{
     color: #FFFFFF;
     font-size: 38px;
 }
-.map{
-    //position: absolute;
+.displNone{
+    display: none;
 }

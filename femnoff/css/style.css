@@ -131,6 +131,20 @@ label{
 .top-menu li a.active{
   color: #fff200;
   }
+.contacts {
+    margin-left: 3em;
+    position: absolute;
+    background: white;
+    min-height: 300px;
+    padding: 60px;
+    box-sizing: border-box;
+    width: 20%;
+    top: 60px;
+}
+
+.contacts p{
+    color: #b79e41;;
+}
 /*-- nav-hover --*/
 .link-effect-4 a {
   padding: 0 10px;
@@ -511,6 +525,9 @@ h3.tittle {
     .banner-info {
         margin: 15% auto 0;
 
+    }
+    .contacts {
+        width: 30%;!important;
     }
 }
 @media screen and (max-width: 2560px) {
@@ -2022,6 +2039,9 @@ h3.tittle{
         color: #FFFFFF;
         font-size: 4em;
     }
+    .contacts {
+        width: 50%;!important;
+    }
 	.blog-single h3 {
 
 		line-height: 2em;
@@ -2037,6 +2057,9 @@ h3.tittle{
 @media (max-width:425px) {
     .btn-z{
         margin-top: 10px;
+    }
+    .contacts {
+        width: 80%;!important;
     }
 }
 /*@media (max-width:667px) {*/
@@ -3157,4 +3180,7 @@ img.img-width{
 .footer i{
     color: #FFFFFF;
     font-size: 38px;
+}
+.map{
+    //position: absolute;
 }

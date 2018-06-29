@@ -636,12 +636,12 @@ h3.tittle {
 	margin: 0;
 }
 figure.effect-jazz {
-    background: -webkit-linear-gradient(-65deg, #000 0%,#000 100%);
-    background: linear-gradient(-65deg, #000 0%,#000 100%);
+    /*background: -webkit-linear-gradient(-65deg, #000 0%,#000 100%);*/
+    /*background: linear-gradient(-65deg, #000 0%,#000 100%);*/
 }
 
 figure.effect-jazz img {
-	opacity: 0.8;
+	/*opacity: 0.8;*/
 }
 figure.effect-jazz figcaption::after,
 figure.effect-jazz img,

@@ -3228,3 +3228,6 @@ img.img-width{
 .displNone{
     display: none;
 }
+.separator.yellow{
+    color: black;!important;
+}

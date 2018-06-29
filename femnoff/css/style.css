@@ -141,7 +141,16 @@ label{
     width: 20%;
     top: 60px;
 }
+.bottom-information{
+    outline: none;
+    padding: 9px 11px 11px;
+    font-size: 1em;
+    color: black;
+    background: #FFFF00;
+    border: none;
+    margin-top: 20px;
 
+}
 .contacts p{
     color: #FFFF00;;
 }
@@ -443,6 +452,11 @@ label{
     font-size: 0.9em;
 }
 
+.sale1{
+    border-radius: 15px;
+    margin-top: 60px;!important;
+    font-size: 2em;!important;
+}
 .arrows{
 	    position:relative;
 		color:#FFFF00;
@@ -1445,7 +1459,7 @@ h2.sec-head {
 	font-size:3em;
 	color:#212121;
 	margin:0;
-	text-transform:capitalize;
+	/*text-transform:capitalize;*/
 }
 .newsletter p{
 	color:#999;
@@ -2862,16 +2876,6 @@ p.desc1{
 p.desc2{
     margin-bottom: 0.01em;!important;
     font-size: 0.8em;!important;
-}
-.bottom-information{
-    outline: none;
-    padding: 9px 11px 11px;
-    font-size: 1em;
-    color: black;
-    background: #FFFF00;
-    border: none;
-    margin-top: 20px;
-
 }
 
 .bottom-information:hover{

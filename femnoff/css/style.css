@@ -2662,7 +2662,8 @@ h3.tittle {
 
 @media (max-width:375px) {
 	.banner {
-		min-height: 350px;
+		min-height: 400px;
+        background: url(../images/catalog/banner_cr.jpg) no-repeat 0px 0px;
 	}
     .sale1{
         border-radius: 15px;

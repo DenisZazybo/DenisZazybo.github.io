@@ -211,6 +211,7 @@ label{
 	.top-menu ul li a {
 	  font-size: 0.9em;
 	  display: inline-block;
+        color: black;
 	}
 	.link-effect-4 a::before {
 		position: absolute;
@@ -441,9 +442,7 @@ label{
     letter-spacing: 4px;
     font-size: 0.9em;
 }
-.sale1{
-    border-radius: 10px;
-}
+
 .arrows{
 	    position:relative;
 		color:#FFFF00;
@@ -2640,10 +2639,22 @@ h3.tittle {
 		margin-top:0;
 	}
 }
+.sale1{
+    border-radius: 15px;
+    margin-top: 40px;
+    font-size: 1.5em;!important;
+}
+
+
 @media (max-width:375px) {
 	.banner {
 		min-height: 350px;
 	}
+    .sale1{
+        border-radius: 15px;
+        margin-top: 20px;
+        font-size: 1em;!important;
+    }
 	.callbacks_tabs a:after {
 		height:10px;
 		width:10px;

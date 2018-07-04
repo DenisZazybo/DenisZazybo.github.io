@@ -17,7 +17,7 @@ var CitiesSlider = function (_React$Component) {
     _this.IMAGE_PARTS = 4;
 
     _this.changeTO = null;
-    _this.AUTOCHANGE_TIME = 100000000;
+    _this.AUTOCHANGE_TIME = 100000;
 
     _this.state = { activeSlide: -1, prevSlide: -1, sliderReady: false };
     return _this;
@@ -82,14 +82,14 @@ var CitiesSlider = function (_React$Component) {
               className: classNames('slider__slide', { 's--active': activeSlide === index, 's--prev': prevSlide === index }),
               key: slide.city
             },
-            // React.createElement(
-            //   'div',
-            //   { className: 'slider__slide-content' },
-            //   React.createElement(
-            //     'h3',
-            //     { className: 'slider__slide-subheading' },
-            //     slide.country || slide.city
-            //   ),
+             React.createElement(
+              'div',
+              { className: 'slider__slide-content' },
+              // React.createElement(
+              //   'h3',
+              //   { className: 'slider__slide-subheading' },
+              //   slide.country || slide.city
+              // ),
             //   React.createElement(
             //     'h2',
             //     { className: 'slider__slide-heading' },
@@ -106,7 +106,7 @@ var CitiesSlider = function (_React$Component) {
             //     { className: 'slider__slide-readmore' },
             //     'read more'
             //   )
-            // ),
+            ),
             React.createElement(
               'div',
               { className: 'slider__slide-parts' },

@@ -511,6 +511,7 @@ label{
 }
 h3.tittle {
     font-size: 3em;
+    word-wrap: break-word;
 }
 h3.tittle.l2 {
     font-size: 2.5em;
@@ -2868,6 +2869,11 @@ span.menu {
 #review {
     padding: 0em 0 0 0;
 }
+
+    h3.tittle.l2 {
+        font-size: 1.75em;
+
+    }
 }
 
 .mt10. p.mt10{

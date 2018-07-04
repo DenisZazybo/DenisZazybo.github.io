@@ -145,9 +145,11 @@ label{
     outline: none;
     padding: 9px 11px 11px;
     font-size: 1em;
-    color: black;
+    font-weight: 500;
+    color: #696969;
     background: #FFFF00;
-    border: none;
+    border: 1px solid #D3D3D3;
+    border-radius: 4px;
     margin-top: 20px;
 
 }
@@ -459,9 +461,10 @@ iframe.lazy-loaded{
 }
 
 .sale1{
-    border-radius: 15px;
+    border-radius: 15px;!important;
     margin-top: 60px;!important;
     font-size: 2em;!important;
+    border: none; !important;
 }
 .arrows{
 	    position:relative;
@@ -2673,6 +2676,7 @@ h3.tittle {
     border-radius: 15px;
     margin-top: 40px;
     font-size: 1.5em;!important;
+    color: black;!important;
 }
 
 
@@ -3221,11 +3225,13 @@ img.img-width{
     outline: none;
     padding: 9px 11px 11px;
     font-size: 1em;
-    color: black;
+    font-weight: 600;
+    color: #696969;
     background: #FFFF00;
-    border: none;
+    border: 1px solid #D3D3D3;
+    border-radius: 4px;
     margin-top: 20px;
-    border-radius: 0px;
+
 }
 .btn-outline-light:hover{
 

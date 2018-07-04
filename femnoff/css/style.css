@@ -523,7 +523,8 @@ h3.tittle {
     word-wrap: break-word;
 }
 h3.tittle.l2 {
-    font-size: 2.5em;
+    font-size: 2.1em;
+    color: #696969;
 }
 
 .ab-text {
@@ -2709,6 +2710,9 @@ h3.tittle {
 		height: 310px;
 		margin: 0 2em;
 	}
+    h3.tittle.l2 {
+        font-size: 1.75em;
+    }
 	.s-1 h3, .s-2 h3, .s-3 h3, .s-1 h3, .s-2 h3, .s-4 h3 {
 		font-size: 1.2em;
 		padding-top: 17em;
@@ -2888,7 +2892,7 @@ span.menu {
 
     h3.tittle.l2 {
         font-size: 1.75em;
-
+        color: #696969;
     }
 }
 
@@ -3266,4 +3270,7 @@ img.img-width{
 }
 .separator.yellow{
     background-color: #FFFF00;!important;
+}
+.titleWork{
+    font-size: 2.5em;
 }

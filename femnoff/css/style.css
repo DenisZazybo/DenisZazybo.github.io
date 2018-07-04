@@ -327,6 +327,9 @@ label{
 	background-position:left top;
 	left: 91%;
 }
+.sl{
+    height: 100%;
+}
 #slider3-pager a {
   display: inline-block;
 }
@@ -366,6 +369,9 @@ label{
   width: 100%;
   left: 0;
   top: 0;
+}
+iframe.lazy-loaded{
+    height: 450px;
 }
 .rslides li{
   position: relative;
@@ -2099,6 +2105,12 @@ h3.tittle{
     }
     .contacts {
         width: 80%;!important;
+    }
+    .sl{
+        height: 300px;
+    }
+    iframe.lazy-loaded{
+        height: 300px;
     }
 }
 /*@media (max-width:667px) {*/

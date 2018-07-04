@@ -512,6 +512,9 @@ label{
 h3.tittle {
     font-size: 3em;
 }
+h3.tittle.l2 {
+    font-size: 2.5em;
+}
 
 .ab-text {
     text-align: center;
@@ -3200,11 +3203,14 @@ img.img-width{
     outline: none;
     padding: 9px 11px 11px;
     font-size: 1em;
-    color: #fff;
+    color: black;
     background: #FFFF00;
     border: none;
     margin-top: 20px;
     border-radius: 0px;
+}
+.btn-outline-light:hover{
+    background: #7CFC00;
 }
 .btn-outline-light.md-close{
     outline: none;

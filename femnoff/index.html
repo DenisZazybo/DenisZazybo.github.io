@@ -115,7 +115,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         <!--<p>Всем клиентам скидка в <i>ИЮНЕ</i> - до <b>10%</b>!</p>-->
                         <h3>КАЖДОМУ КЛИЕНТУ ПОДАРОК МОСКИТНАЯ СЕТКА ИЛИ ДЕТСКИЙ ЗАМОК НА ОКНА</h3>
                         <p>БЕСПЛАТНЫЙ ЗАМЕР И ПОДБОР МАТЕРИАЛОВ! БЕСПЛАТНАЯ ДОСТАВКА!</p>
-                        <input type="button" value="Скидка 10% здесь!" class="bottom-information sale1">
+                        <input type="button" value="Скидка 10% здесь!" class="bottom-information sale1 n5">
                     </div>
                 </li>
                 <!--<li>-->
@@ -236,7 +236,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <h3 class="tittle">Наши работы</h3>
         <!--/about-section-->
         <span class="separator yellow"></span>
-        <h3 class="tittle">Рулонные шторы день-ночь</h3>
+        <h3 class="tittle l2">Рулонные шторы день-ночь</h3>
         <div class="about-section agileinfo">
             <div class="col-md-7 ab-left wow fadeInLeft animated animated" data-wow-delay=".5s"
                  style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
@@ -288,7 +288,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </div>
         <!--//about-section-->
         <span class="separator yellow mt4em"></span>
-        <h3 class="tittle ">Касетные рулонные шторы</h3>
+        <h3 class="tittle l2">Касетные рулонные шторы</h3>
         <!--/about-section2-->
         <div class="about-section">
 
@@ -341,7 +341,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <!--//about-section2-->
         <!--/about-section-->
         <span class="separator yellow mt4em"></span>
-        <h3 class="tittle ">Cвободновисящие рольшторы</h3>
+        <h3 class="tittle l2">Cвободновисящие рольшторы</h3>
         <div class="about-section agileinfo">
             <div class="col-md-7 ab-left wow fadeInLeft animated animated" data-wow-delay=".5s"
                  style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
@@ -386,7 +386,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <p class="desc2"><b>Особенности</b>: с направляющими и в коробе</p>
                 <p class="desc2"><b>Управление</b>: цепочка - подъем полотна.</p>
 
-                <input type="button" value="Подробнее" class="bottom-information n2">
+                <input type="button" value="Подробнее" class="bottom-information n3">
 
             </div>
             <div class="clearfix"></div>
@@ -394,7 +394,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <!--//about-section-->
         <!--//about-section-->
         <span class="separator yellow mt4em"></span>
-        <h3 class="tittle ">Блэкаут</h3>
+        <h3 class="tittle l2">Блэкаут</h3>
         <!--/about-section2-->
         <div class="about-section">
 
@@ -413,7 +413,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <p class="desc2"><b>Особенности</b>: с направляющими и в коробе</p>
                 <p class="desc2"><b>Управление</b>: цепочка - подъем полотна.</p>
 
-                <input type="button" value="Подробнее" class="bottom-information n1">
+                <input type="button" value="Подробнее" class="bottom-information n4">
             </div>
             <div class="col-md-7 ab-left wow fadeInRight animated animated" data-wow-delay=".5s"
                  style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
@@ -444,6 +444,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
             <div class="clearfix"></div>
         </div>
+
         <!--//about-section2-->
         <!--&lt;!&ndash;/about-section&ndash;&gt;-->
         <!--<span class="separator yellow mt4em"></span>-->
@@ -694,7 +695,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--Gallery-->
 <div class="gallery w3l-1" id="gallery">
     <div class="container">
-        <h3 class="tittle">Наши работы</h3>
+        <h3 class="tittle">Галерея</h3>
         <div class="gallery-grids">
             <div class="col-md-6 baner-top wow fadeInLeft animated animated" data-wow-delay=".5s"
                  style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
@@ -1333,7 +1334,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         var overlay = document.querySelector('.md-overlay');
         var el = document.querySelector('.md-trigger');
         var but1 = document.querySelector('.bottom-information.n1');
-        var but2 = document.querySelector('.bottom-information.n2')
+        var but2 = document.querySelector('.bottom-information.n2');
+        var but3 = document.querySelector('.bottom-information.n3');
+        var but4 = document.querySelector('.bottom-information.n4');
+        var but5 = document.querySelector('.bottom-information.n5');
+
         var modal = document.querySelector('#' + el.getAttribute('data-modal')),
             close = modal.querySelector('.md-close');
 
@@ -1367,6 +1372,25 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             overlay.addEventListener('click', removeModalHandler);
 
         });
+        but3.addEventListener('click', function (ev) {
+            modal.classList.add('md-show');
+            overlay.removeEventListener('click', removeModalHandler);
+            overlay.addEventListener('click', removeModalHandler);
+
+        });
+        but4.addEventListener('click', function (ev) {
+            modal.classList.add('md-show');
+            overlay.removeEventListener('click', removeModalHandler);
+            overlay.addEventListener('click', removeModalHandler);
+
+        });
+        but5.addEventListener('click', function (ev) {
+            modal.classList.add('md-show');
+            overlay.removeEventListener('click', removeModalHandler);
+            overlay.addEventListener('click', removeModalHandler);
+
+        });
+
         var buts = $('.bottom-information');
         // for(var i=0; i<buts.length; i++) {
         //     buts[i] = addEventListener('click', function (ev) {
@@ -1378,9 +1402,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         // }
 
         close.addEventListener('click', function (ev) {
-            console.log("!!!!!###")
             ev.stopPropagation();
-
             removeModalHandler();
         });
 

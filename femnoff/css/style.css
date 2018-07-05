@@ -146,7 +146,8 @@ label{
     padding: 9px 11px 11px;
     font-size: 1em;
     font-weight: 500;
-    color: #696969;
+    /*color: #696969;*/
+    color: black;
     background: #FFFF00;
     border: 1px solid #D3D3D3;
     border-radius: 4px;
@@ -524,7 +525,8 @@ h3.tittle {
 }
 h3.tittle.l2 {
     font-size: 2.1em;
-    color: #696969;
+    /*color: #696969;*/
+    color: black;
 }
 
 .ab-text {
@@ -533,7 +535,8 @@ h3.tittle.l2 {
     padding: 1.45em 2em;
 }
 .ab-text p {
-    color: #777;
+    /*color: #777;*/
+    color: black;
     line-height: 1.9em;
     font-size: 0.875em;
     margin: 0em 0 1em;

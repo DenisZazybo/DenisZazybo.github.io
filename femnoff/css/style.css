@@ -20,6 +20,14 @@ a:hover{
  text-decoration:none;
 }
 
+.text-header{
+    color: #FFFFFF;
+    font-size: 14px;
+}
+.text-header a{
+    color: #FFFFFF;
+    font-size: 16px;
+}
 input[type="button"],input[type="submit"],li.parallelogram{
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
@@ -2110,6 +2118,9 @@ h3.tittle{
     .btn-z{
         margin-top: 10px;
     }
+    .text-header a{
+        font-size: 14px;
+    }
     .newsletter input[type="submit"] {
         width: 63%;
     }
@@ -3224,10 +3235,6 @@ img.img-width{
     animation: pulsate 5.2s linear infinite;
 }
 
-.text-header, .text-header a{
-    color: #FFFFFF;
-    font-size: 14px;
-}
 .text-header a:hover{
     color: #FFFF00;
     cursor: pointer;

@@ -1217,8 +1217,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <h3>Запишитесь на замер рольштор и получите при заказе полезный подарок:</h3>
         <p>Москитная сетка или замок на окна для защиты детей</p>
         <form role="form" onsubmit="return call_form(); return false;">
-            <input type="phone" id="phone2" name="Phone" value="Телефон" onfocus="this.value = '';"
-                   onblur="if (this.value == '') {this.value = 'Телефон';}" required >
+            <input type="phone" id="phone2" name="Phone" placeholder="Телефон" onfocus="this.value = '';"
+                   required >
             <input type="submit" class="btn-z" value="Записаться на Замер">
         </form>
     </div>
@@ -1382,12 +1382,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
          style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
         <h2 class="title">Сообщение</h2>
         <form role="form" onsubmit="return check_mess_form(); return false;">
-            <input type="text" id="fullname" value="Имя" name="Name" onfocus="this.value='';"
-                   onblur="if (this.value == '') {this.value ='Имя';}" required="">
-            <input type="email address" id="tel" value="Телефон" name="Phone" onfocus="this.value='';"
-                   onblur="if (this.value == '') {this.value ='Тетефон';}" required="">
+            <input type="text" id="fullname" placeholder="Имя" name="Name" onfocus="this.value='';"
+                   required="">
+            <input type="email address" id="tel" name="Phone" onfocus="this.value='';"
+                  placeholder="Тетефон" required="">
             <textarea name="Сообщение" id="message" onfocus="this.value = '';"
-                      onblur="if (this.value == '') {this.value = 'Сообщение';}" required="">Сообщение</textarea>
+                     placeholder="Cообщение" required="">Сообщение</textarea>
             <div class="con-form text-center">
                 <input type="submit" value="Отправить">
             </div>

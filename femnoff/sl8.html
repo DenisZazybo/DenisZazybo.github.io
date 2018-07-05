@@ -13,7 +13,7 @@
 </head>
 
 <body>
-<div id="app3" ></div>
+<div id="app8" ></div>
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js'></script>
@@ -22,30 +22,23 @@
 <script src="js/sl1.js"></script>
 <script>
 
-    var slides = [{
+    var slides = [ {
         city: 'Prague',
         country: 'Czech Republic',
-        img: 'images/catalog/s3.jpg'
+        img: 'images/catalog/dr2.jpg'
     },{
         city: 'Paris',
         country: 'France',
-        img: 'images/catalog/s1.jpg'
-    }, {
-        city: 'Singapore',
-        img: 'images/catalog/s2.jpg'
-    },
-        {
-            city: 'Amsterdam',
-            country: 'Netherlands',
-            img: 'images/catalog/s4.jpg'
-        }, {
-            city: 'Moscow',
-            country: 'Russia',
-            img: 'images/catalog/s5.jpg'
-        }
+        img: 'images/catalog/dr1.jpg'
+    }
+        //{
+        //     city: 'Moscow',
+        //     country: 'Russia',
+        //     img: 'images/catalog/5.jpg'
+        // }
     ];
 
-    ReactDOM.render(React.createElement(CitiesSlider, { slides: slides }), document.querySelector('#app3'));
+    ReactDOM.render(React.createElement(CitiesSlider, { slides: slides }), document.querySelector('#app8'));
 
 </script>
 

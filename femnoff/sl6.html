@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Cities Slider (React)</title>
+
+
+
+    <link rel="stylesheet" href="css/sl.css">
+    <script src="js/sl1.js"></script>
+
+
+</head>
+
+<body>
+<div id="app6" ></div>
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/classnames/2.2.5/index.min.js'></script>
+
+<script src="js/sl1.js"></script>
+<script>
+
+    var slides = [{
+        city: 'Paris',
+        country: 'France',
+        img: 'images/catalog/gor1.jpg'
+    }, {
+        city: 'Singapore',
+        country: 'Czech Republic',
+        img: 'images/catalog/gor2.jpg'
+    }, {
+        city: 'Prague',
+        country: 'Czech Republic',
+        img: 'images/catalog/gor3.jpg'
+    },
+    // {
+    //     city: 'Paris',
+    //     country: 'France',
+    //     img: 'images/catalog/c4.jpg'
+    // }, {
+    //      city: 'Singapore',
+    //      country: 'Czech Republic',
+    //      img: 'images/catalog/c5.jpg'
+    // }, {
+    //      city: 'Prague',
+    //      country: 'Czech Republic',
+    //      img: 'images/catalog/c6.jpg'
+    //  }
+    ];
+
+    ReactDOM.render(React.createElement(CitiesSlider, { slides: slides }), document.querySelector('#app6'));
+
+</script>
+
+</body>
+</html>

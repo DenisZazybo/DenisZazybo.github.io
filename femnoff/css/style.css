@@ -341,6 +341,7 @@ label{
 .sl{
     height: 100%;
 }
+
 #slider3-pager a {
   display: inline-block;
 }
@@ -3289,4 +3290,7 @@ img.img-width{
 }
 .titleWork{
     font-size: 2.5em;
+}
+.team-section h3{
+    color: black;!important;
 }

@@ -1419,7 +1419,7 @@ h4.tittle{
 }
 /*--bottom-*/
 .bottom{
-  background: url("../images/ban3.jpg") no-repeat 0px 0px;
+  /*background: url("../images/ban3.jpg") no-repeat 0px 0px;*/
   padding: 0em 0 0 0;
   background-size: cover;
   -o-background-size: cover;

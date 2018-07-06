@@ -2655,7 +2655,7 @@ h3.tittle {
 	}
 	.banner-info h3 {
     font-size: 1.8em;
-}
+    }
 	.data {
 		float: right;
 		width: 72%;
@@ -2682,13 +2682,13 @@ h3.tittle {
 		left: 38%;
 	}
 	.test-monials h5 {
-      font-size: 1.5em;
+      font-size: 1.75em;
 	}
 	.test-review p {
 		margin: 1em 0em;
 	}
 	.banner-info p {
-    font-size: 1.5em;
+    font-size: 1.75em;
 }
 .banner-info {
     margin: 30% auto 0;

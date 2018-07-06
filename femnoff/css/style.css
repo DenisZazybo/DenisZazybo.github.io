@@ -1415,7 +1415,7 @@ h4.tittle{
 .info-gal-con p {
     font-size: 14px;
     line-height: 2.2em;
-    color: #FFFF00;
+    /*color: #FFFF00;*/
 }
 /*--bottom-*/
 .bottom{
@@ -1432,6 +1432,7 @@ h4.tittle{
 .bottom-top{
   text-align:center;
   margin-top:6em;
+  margin-bottom:6em;
   padding: 5px;
   background-color: rgba(128, 128, 128, 0.9);
 }

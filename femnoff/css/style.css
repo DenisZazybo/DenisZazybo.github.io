@@ -2129,6 +2129,7 @@ h3.tittle{
     .btn-z{
         margin-top: 10px;
     }
+
     .contacts {
 
         padding: 20px;
@@ -2730,7 +2731,7 @@ h3.tittle {
 
 @media (max-width:375px) {
 	.banner {
-		min-height: 400px;
+		min-height: 450px;
         background: url(../images/catalog/banner_cr.jpg) no-repeat 0px 0px;
 	}
     .sale1{
@@ -2872,7 +2873,7 @@ h3.tittle {
     width: 92%;
 }
 .banner-info {
-    margin: 40% auto 0;
+    margin: 30% auto 0;
 }
 }
 @media (max-width:320px) {

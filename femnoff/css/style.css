@@ -459,7 +459,7 @@ iframe.lazy-loaded{
 .banner-info p {
     color: #FFFFFF;
     font-size: 2.5em;
-    margin-top: 2em;
+    margin-top: 3em;
     font-weight: 500;
     font-family: 'Roboto', sans-serif;
 
@@ -1419,7 +1419,7 @@ h4.tittle{
 }
 /*--bottom-*/
 .bottom{
-  /*background: url("../images/ban3.jpg") no-repeat 0px 0px;*/
+  background: url("../images/ban3.jpg") no-repeat 0px 0px;
   padding: 0em 0 0 0;
   background-size: cover;
   -o-background-size: cover;
@@ -1731,9 +1731,10 @@ h2.sec-head {
 	.banner-info {
 		padding: 4em 2em;
 		z-index: 999;
-		margin: 15% auto 0;
+		margin: 12% auto 0;
 		width: 100%;
 	}
+
 	.bottom-top p {
 		/*margin: 1em auto;*/
 		/*width: 65%;*/
@@ -2117,6 +2118,13 @@ h3.tittle{
     font-size: 1.5em;
 }
 }
+.sale1{
+    border-radius: 15px;
+    margin-top: 70px;
+    font-size: 1.5em;!important;
+    color: black;!important;
+}
+
 @media (max-width:425px) {
     .btn-z{
         margin-top: 10px;
@@ -2139,6 +2147,23 @@ h3.tittle{
     }
     .sl{
         height: 300px;
+    }
+
+    element.style {
+    }
+    button, html input[type="button"], input[type="reset"], input[type="submit"] {
+        -webkit-appearance: button;
+        cursor: pointer;
+    }
+    input[type="button"], input[type="submit"], li.parallelogram {
+        transition: 0.5s all;
+        -webkit-transition: 0.5s all;
+        -moz-transition: 0.5s all;
+        -o-transition: 0.5s all;
+        -ms-transition: 0.5s all;
+    }
+    .sale1 {
+        margin-top: 50px;
     }
     iframe.lazy-loaded{
         height: 300px;
@@ -2700,12 +2725,7 @@ h3.tittle {
 		margin-top:0;
 	}
 }
-.sale1{
-    border-radius: 15px;
-    margin-top: 40px;
-    font-size: 1.5em;!important;
-    color: black;!important;
-}
+
 
 
 @media (max-width:375px) {
@@ -2715,7 +2735,7 @@ h3.tittle {
 	}
     .sale1{
         border-radius: 15px;
-        margin-top: 20px;
+        margin-top: 25px;
         font-size: 1em;!important;
     }
 	.callbacks_tabs a:after {
@@ -2835,7 +2855,7 @@ h3.tittle {
     }
     .banner-info p {
         font-size: 1em;
-        margin-top: 1em;
+        margin-top: 1.5em;
 
 
     }
@@ -2852,10 +2872,14 @@ h3.tittle {
     width: 92%;
 }
 .banner-info {
-    margin: 25% auto 0;
+    margin: 40% auto 0;
 }
 }
 @media (max-width:320px) {
+    .banner-info p {
+        font-size: 1em;
+        margin-top: 1.75em;
+    }
 	.view {
 		width: 241px;
 		height: 310px;
@@ -2881,7 +2905,7 @@ h3.tittle {
     font-size: 1.7em;
 }
 .banner-info {
-    margin: 30% auto 0;
+    margin: 35% auto 0;
 }
 .banner-info p {
     font-size: 0.875em;

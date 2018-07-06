@@ -50,6 +50,11 @@ ul{
 label{
 	margin:0;
 }
+.thanks{
+    padding-top: 300px;
+    color: #FFFFFF;
+    width: 100%;!important;
+}
 /*-- header --*/
 .banner {
     /*background: url(../images/banner.jpg) no-repeat 0px 0px;*/
@@ -1724,6 +1729,9 @@ h2.sec-head {
 		padding: 0 10px;
 		margin: 0 8px;
 	}
+    .thanks{
+        padding-top: 200px;
+    }
     .bottom-top{
         margin-top: 2em;
         padding: 0em;
@@ -2977,7 +2985,7 @@ p.desc1{
 }
 p.desc2{
     margin-bottom: 0.01em;!important;
-    font-size: 0.8em;!important;
+    font-size: 0.855em;!important;
 }
 
 .bottom-information:hover{
@@ -3320,11 +3328,6 @@ img.img-width{
     border-radius: 0px;
 }
 
-.thanks{
-    padding-top: 200px;
-    color: #FFFFFF;
-    width: 100%;!important;
-}
 .thanks h3, .thanks p{
     color: #FFFFFF;
 }

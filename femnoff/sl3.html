@@ -22,27 +22,31 @@
 <script src="js/sl1.js"></script>
 <script>
 
-    var slides = [{
+    var slides = [
+    {
         city: 'Prague',
         country: 'Czech Republic',
         img: 'images/catalog/s3.jpg'
-    },{
+    },
+    {
         city: 'Paris',
         country: 'France',
         img: 'images/catalog/s1.jpg'
-    }, {
+    },
+    {
         city: 'Singapore',
         img: 'images/catalog/s2.jpg'
     },
-        {
+    {
             city: 'Amsterdam',
             country: 'Netherlands',
             img: 'images/catalog/s4.jpg'
-        }, {
+    },
+    {
             city: 'Moscow',
             country: 'Russia',
             img: 'images/catalog/s5.jpg'
-        }
+    }
     ];
 
     ReactDOM.render(React.createElement(CitiesSlider, { slides: slides }), document.querySelector('#app3'));

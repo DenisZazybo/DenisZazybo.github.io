@@ -1854,6 +1854,9 @@ h2.sec-head {
 .newsletter h3 {
     font-size: 2.5em;
 }
+    .newsletter2 h3 {
+        font-size: 2.5em;
+    }
 .diff-grid {
 		min-height: 206px;
 	}
@@ -2648,6 +2651,9 @@ h4.tittle {
     font-size: 1.7em;
 	    line-height: 1.5em;
 }
+    .newsletter2 h3 {
+        font-size: 2.5em;
+    }
 .newsletter p {
     font-size: 13px;
 }

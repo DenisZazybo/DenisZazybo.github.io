@@ -28,6 +28,9 @@ a:hover{
     color: #FFFFFF;
     font-size: 16px;
 }
+.mt30{
+    margin-top: 30px;
+}
 input[type="button"],input[type="submit"],li.parallelogram{
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
@@ -1483,24 +1486,65 @@ h2.sec-head {
 }
 /*--social-icons--*/
 /*-- newsletter --*/
-.newsletter{
+.newsletter2{
 	/*margin:3em 0 0;*/
 	text-align:center;
 	padding-bottom:4em;
     padding-top:4em;
-    background-color: #f5f5f5;
+    background-color: #ffffff;
 }
-.newsletter h3{
+.newsletter2 h3{
 	font-size:3em;
 	color:#212121;
 	margin:0;
 	/*text-transform:capitalize;*/
 }
-.newsletter p{
+.newsletter2 li{
+    margin-top: 10px;
+    text-align: left;!important;
+}
+.howButtom{
+    background-color: #FFFF00;
+    padding: 5px;
+    border-radius: 30px;
+}
+.pl-pr-30{
+    padding: 30px;
+}
+.p20{
+    margin: 20px;
+}
+.newsletter2 h4{
+    font-size:2em;
+    color:#212121;
+    margin:0;
+    /*text-transform:capitalize;*/
+}
+.newsletter2 p{
 	color:#999;
 	line-height:1.8em;
 	margin:1em 0 2em;
 }
+
+.newsletter{
+    /*margin:3em 0 0;*/
+    text-align:center;
+    padding-bottom:4em;
+    padding-top:4em;
+    background-color: #f5f5f5;
+}
+.newsletter h3{
+    font-size:3em;
+    color:#212121;
+    margin:0;
+    /*text-transform:capitalize;*/
+}
+.newsletter p{
+    color:#999;
+    line-height:1.8em;
+    margin:1em 0 2em;
+}
+
 .newsletter form {
     width: 60%;
     margin: 0 auto;
@@ -2981,7 +3025,9 @@ span.menu {
 .mt10. p.mt10{
     margin-top: 10px;!important;
 }
-
+.mt20{
+    margin-top: 20px;
+}
 p.desc1{
     margin-bottom: 0.01em;!important;
 }

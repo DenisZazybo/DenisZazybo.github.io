@@ -1004,12 +1004,12 @@ figure.effect-jazz:hover p {
     cursor: default;
 }
 .view .mask,.view .content {
-  	width: 315px;
+  	width: 282px;
 	height: 330px;
 	position: absolute;
 	overflow: hidden;
 	top: 0px;
-	left: -15px;
+	left: -12px;
 }
 .view h4 {
    text-transform: uppercase;
@@ -1589,13 +1589,9 @@ newsletter-th{
     background:#333;
     color: #FFFFFF;
 }
-.view{
-    width: 100%;
-}
-.view img {
-    display: block;
-    margin: 0 auto;
-}
+
+
+
 .newsletter h3{
     font-size:3em;
     color:#212121;

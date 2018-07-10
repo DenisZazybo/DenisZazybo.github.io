@@ -1004,12 +1004,12 @@ figure.effect-jazz:hover p {
     cursor: default;
 }
 .view .mask,.view .content {
-  	width: 282px;
+  	width: 315px;
 	height: 330px;
 	position: absolute;
 	overflow: hidden;
 	top: 0px;
-	left: -12px;
+	left: -15px;
 }
 .view h4 {
    text-transform: uppercase;
@@ -1584,12 +1584,18 @@ newsletter-th{
     border: none;
     width: 100%;
 }
+
 .newsletter-th input[type="submit"]:hover{
     background:#333;
     color: #FFFFFF;
 }
-
-
+.view{
+    width: 100%;
+}
+.view img {
+    display: block;
+    margin: 0 auto;
+}
 .newsletter h3{
     font-size:3em;
     color:#212121;

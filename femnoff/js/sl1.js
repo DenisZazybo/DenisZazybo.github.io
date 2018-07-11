@@ -1,9 +1,6 @@
 'use strict';
-
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
-
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
-
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
 var CitiesSlider = function (_React$Component) {
@@ -129,29 +126,5 @@ var CitiesSlider = function (_React$Component) {
         } })
     );
   };
-
   return CitiesSlider;
 }(React.Component);
-
-// var slides = [{
-//   city: 'Paris',
-//   country: 'France',
-//   img: '../img/1.jpg'
-// }, {
-//   city: 'Singapore',
-//   img: '../img/2.jpg'
-// }, {
-//   city: 'Prague',
-//   country: 'Czech Republic',
-//   img: '../img/3.jpg'
-// }, {
-//   city: 'Amsterdam',
-//   country: 'Netherlands',
-//   img: '../img/4.jpg'
-// }, {
-//   city: 'Moscow',
-//   country: 'Russia',
-//   img: '../img/5.jpg'
-// }];
-//
-// ReactDOM.render(React.createElement(CitiesSlider, { slides: slides }), document.querySelector('#app'));

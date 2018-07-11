@@ -7,6 +7,43 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
+    <meta name="yandex-verification" content="baed2dbce75db95c" />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119355950-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-119355950-1');
+    </script>
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript" >
+        (function (d, w, c) {
+            (w[c] = w[c] || []).push(function() {
+                try {
+                    w.yaCounter48923783 = new Ya.Metrika({
+                        id:48923783,
+                        clickmap:true,
+                        trackLinks:true,
+                        accurateTrackBounce:true,
+                        webvisor:true
+                    });
+                } catch(e) { }
+            });
+
+            var n = d.getElementsByTagName("script")[0],
+                s = d.createElement("script"),
+                f = function () { n.parentNode.insertBefore(s, n); };
+            s.type = "text/javascript";
+            s.async = true;
+            s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+            if (w.opera == "[object Opera]") {
+                d.addEventListener("DOMContentLoaded", f, false);
+            } else { f(); }
+        })(document, window, "yandex_metrika_callbacks");
+    </script>
+    <!-- /Yandex.Metrika counter -->
     <title>Купить рольшторы в Минске!Рольшторы. Жалюзи. Плиссе. Цены, фото!</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -1210,14 +1247,13 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <div class="contact_w3agile" id="contact">
     <div class="container wow fadeInUp animated animated" data-wow-delay=".5s"
          style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
-        <h2 class="title">Сообщение</h2>
+        <h2 class="title">У Вас остались вопросы?</h2>
         <form role="form" onsubmit="return check_mess_form(); return false;">
-            <input type="text" id="fullname" placeholder="Имя" name="Name" onfocus="this.value='';"
-                   required="">
-            <input type="email address" id="tel" name="Phone" onfocus="this.value='';"
-                  placeholder="Тетефон" required="">
-            <textarea name="Сообщение" id="message" onfocus="this.value = '';"
-                     placeholder="Cообщение" required="">Сообщение</textarea>
+            <input type="text" id="fullname" placeholder="Имя" name="Name">
+            <input type="email address" id="tel" name="Phone"
+                  placeholder="Телефон" required="">
+            <textarea name="Message" id="message"
+                     placeholder="Cообщение"></textarea>
             <div class="con-form text-center">
                 <input type="submit" value="Отправить">
             </div>
@@ -1509,16 +1545,11 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 
         //if(!$('#name').val().length > 0){$('#name').next('.errorForm').slideDown();err = 1;}
         // if(!$('#family').val().length > 0){$('#family').next('.errorForm').slideDown();err = 1;}
-        if (!$('#fullname').val().length > 0) {
-            err = 1;
-        }
+
         if (!$('#tel').val().length > 0) {
             err = 1;
         }
 
-        if (!$('#message').val().length > 0) {
-            err = 1;
-        }
         obj = {
             name: $('#fullname').val(),
             phone: $('#tel').val(),
@@ -1541,7 +1572,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
                 window.location.href = url_thank;
             });
         }
-        console.log("error");
+
         return false;
     }
 </script>

@@ -1746,7 +1746,7 @@ newsletter-th{
 }
 .contact_w3agile form input[type="submit"]:hover,.contact_w3agile form input[type="text"]:hover,.contact_w3agile form input[type="email address"]:hover,.contact_w3agile textarea:hover {
     border: 2px solid #FFFF00;
-	color:#FFFF00;
+	/*color:#FFFF00;*/
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
 	-moz-transition:0.5s all;
